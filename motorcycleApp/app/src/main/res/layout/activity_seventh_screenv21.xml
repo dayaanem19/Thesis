@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFB"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/resetPic"
+        android:layout_width="410dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:srcCompat="@drawable/ic_undraw_young_and_happy_hfpe" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:text="Reset Password"
+        android:textColor="#0A0909"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please fill your details below"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="317dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:background="#86D2E5"
+        android:text="Reset Password"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPinNumber"
+        app:layout_constraintStart_toStartOf="@+id/confirmPinNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/pinNumber"
+        android:layout_width="317dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="33dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint=" New Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/resetPic"
+        app:layout_constraintStart_toStartOf="@+id/resetPic"
+        app:layout_constraintTop_toBottomOf="@+id/resetPic" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Sign in"
+        android:textColor="#1B1515"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPinNumber"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="@+id/confirmPinNumber"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPinNumber" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Just Remembered?"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPinNumber"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="@+id/confirmPinNumber"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPinNumber" />
+
+    <EditText
+        android:id="@+id/confirmPinNumber"
+        android:layout_width="317dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="21dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint=" Confirm New Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/pinNumber"
+        app:layout_constraintStart_toStartOf="@+id/pinNumber"
+        app:layout_constraintTop_toBottomOf="@+id/pinNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,16 +22,22 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.motorcycleapp.fifthScreen" />
-        <activity android:name="com.example.motorcycleapp.fourthScreen" />
-        <activity android:name="com.example.motorcycleapp.thirdScreen" />
-        <activity android:name="com.example.motorcycleapp.secondScreen" />
-        <activity android:name="com.example.motorcycleapp.MainActivity" >
+        <activity android:name="com.example.motorcycleapp.ActivityFirst" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.motorcycleapp.ActivityMainV2" >
+        </activity>
+        <activity android:name="com.example.motorcycleapp.ActivityThirdV2" >
+        </activity>
+        <activity android:name="com.example.motorcycleapp.ActivityThird21" >
+        </activity>
+        <activity android:name="com.example.motorcycleapp.ActivitySeventh2" >
+        </activity>
+        <activity android:name="com.example.motorcycleapp.ActivitySeventh21" >
         </activity>
     </application>
 

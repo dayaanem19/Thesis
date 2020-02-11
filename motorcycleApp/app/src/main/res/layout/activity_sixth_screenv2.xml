@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFB"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="406dp"
+        android:layout_height="302dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/ic_undraw_forgot_password_gi2d" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:text="TextView"
+        android:textColor="#2B2525"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="129dp"
+        tools:text="Forgot PIN" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        tools:layout_editor_absoluteY="103dp"
+        tools:text="Please fill your details below" />
+
+    <EditText
+        android:id="@+id/recoveryCode"
+        android:layout_width="317dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/ic_action_code"
+        android:ems="10"
+        android:hint=" Recovery Code "
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="317dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="61dp"
+        android:background="#86D2E5"
+        android:text="Next"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/recoveryCode"
+        app:layout_constraintStart_toStartOf="@+id/recoveryCode"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Just Remembered?"
+        app:layout_constraintEnd_toEndOf="@+id/recoveryCode"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="@+id/recoveryCode"
+        app:layout_constraintTop_toBottomOf="@+id/recoveryCode" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Sign in"
+        android:textColor="#1B1515"
+        app:layout_constraintEnd_toEndOf="@+id/recoveryCode"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="@+id/recoveryCode"
+        app:layout_constraintTop_toBottomOf="@+id/recoveryCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

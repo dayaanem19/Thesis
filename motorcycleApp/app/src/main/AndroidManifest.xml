@@ -12,16 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".fifthScreen"></activity>
-        <activity android:name=".fourthScreen" />
-        <activity android:name=".thirdScreen" />
-        <activity android:name=".secondScreen" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ActivityFirst">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ActivityMainV2">
+        </activity>
+        <activity android:name=".ActivityThirdV2">
+        </activity>
+        <activity android:name=".ActivityThird21">
+        </activity>
+        <activity android:name=".ActivitySeventh2">
+        </activity>
+        <activity android:name=".ActivitySeventh21">
         </activity>
     </application>
 
