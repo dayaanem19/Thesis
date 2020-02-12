@@ -12,6 +12,7 @@ public class ActivityMainV2 extends AppCompatActivity {
 
     private Button signUpBtn;
     private TextView forgotPassword;
+    private Button loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,14 @@ public class ActivityMainV2 extends AppCompatActivity {
             }
         });
 
+        loginButton = findViewById(R.id.loginButton);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivitySecondV2();
+            }
+        });
+
     }
 
     public void openActivityThirdV2() {
@@ -50,6 +59,11 @@ public class ActivityMainV2 extends AppCompatActivity {
         startActivity(intent);
 
         // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
+    }
+
+    public void openActivitySecondV2(){
+        Intent intent = new Intent(this, ActivitySecondV2.class);
+        startActivity(intent);
     }
 
 }

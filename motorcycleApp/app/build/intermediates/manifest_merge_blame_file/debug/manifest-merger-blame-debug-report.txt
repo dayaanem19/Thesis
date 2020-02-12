@@ -6,7 +6,7 @@
 6    android:versionName="1.0" >
 7
 8    <uses-sdk
-9        android:minSdkVersion="14"
+9        android:minSdkVersion="16"
 9-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
 10        android:targetSdkVersion="29" />
 10-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
@@ -16,11 +16,11 @@
 12-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:6:18-37
 13
 14    <application
-14-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:8:5-32:19
+14-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:8:5-34:19
 15        android:allowBackup="true"
 15-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.0.1] /home/dayan/.gradle/caches/transforms-2/files-2.1/46da25c3e2ae6308b2227b660caa604d/core-1.0.1/AndroidManifest.xml:22:18-86
+16-->[androidx.core:core:1.1.0] /home/dayan/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:icon="@mipmap/ic_launcher"
 18-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:10:9-43
@@ -67,6 +67,10 @@
 39-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:30:9-31:20
 39-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:30:19-52
 40        </activity>
-41    </application>
-42
-43</manifest>
+41        <activity android:name="com.example.motorcycleapp.ActivitySecondV2" >
+41-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:32:9-33:20
+41-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:32:19-51
+42        </activity>
+43    </application>
+44
+45</manifest>

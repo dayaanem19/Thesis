@@ -6,7 +6,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="16"
         android:targetSdkVersion="29" />
 
     <dist:module dist:instant="true" />
@@ -37,6 +37,8 @@
         <activity android:name="com.example.motorcycleapp.ActivitySeventh2" >
         </activity>
         <activity android:name="com.example.motorcycleapp.ActivitySeventh21" >
+        </activity>
+        <activity android:name="com.example.motorcycleapp.ActivitySecondV2" >
         </activity>
     </application>
 

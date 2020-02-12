@@ -29,6 +29,8 @@
         </activity>
         <activity android:name=".ActivitySeventh21">
         </activity>
+        <activity android:name=".ActivitySecondV2">
+        </activity>
     </application>
 
 </manifest>
