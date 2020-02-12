@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ActivitySeventh2 extends AppCompatActivity {
 
     private Button nextBtn;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +27,23 @@ public class ActivitySeventh2 extends AppCompatActivity {
                 openActivitySeventh21();
             }
         });
+
+        textView = findViewById(R.id.textView16);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityMainV2();
+            }
+        });
     }
 
     public void openActivitySeventh21() {
         Intent intent = new Intent(this, ActivitySeventh21.class);
+        startActivity(intent);
+    }
+
+    public void openActivityMainV2() {
+        Intent intent = new Intent(this, ActivityMainV2.class);
         startActivity(intent);
     }
 }

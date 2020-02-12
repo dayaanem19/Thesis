@@ -25,7 +25,7 @@ public class ActivityMainV2 extends AppCompatActivity {
         signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivityThirdV2();
+                openActivitySecondV2();
             }
         });
 
@@ -41,14 +41,14 @@ public class ActivityMainV2 extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivitySecondV2();
+                openActivityFourthV2();
             }
         });
 
     }
 
-    public void openActivityThirdV2() {
-        Intent intent = new Intent(this, ActivityThirdV2.class);
+    public void openActivitySecondV2() {
+        Intent intent = new Intent(this, ActivitySecondV2.class);
         startActivity(intent);
 
         // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
@@ -61,9 +61,11 @@ public class ActivityMainV2 extends AppCompatActivity {
         // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
     }
 
-    public void openActivitySecondV2(){
-        Intent intent = new Intent(this, ActivitySecondV2.class);
+    public void openActivityFourthV2() {
+        Intent intent = new Intent(this, ActivityFourthV2.class);
         startActivity(intent);
+
+        // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
     }
 
 }

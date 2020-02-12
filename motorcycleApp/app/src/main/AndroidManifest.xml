@@ -31,6 +31,16 @@
         </activity>
         <activity android:name=".ActivitySecondV2">
         </activity>
+        <activity android:name=".ActivitySecond21">
+        </activity>
+        <activity android:name=".ActivityFourthV2">
+        </activity>
+        <activity android:name=".ActivityFifthV2">
+        </activity>
+        <activity android:name=".ActivitySixthV2">
+        </activity>
+        <activity android:name=".ActivitySixthV21">
+        </activity>
     </application>
 
 </manifest>

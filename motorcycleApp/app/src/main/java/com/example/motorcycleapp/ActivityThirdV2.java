@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ActivityThirdV2 extends AppCompatActivity {
-    private Button nextBtn;
+    private Button submitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +17,8 @@ public class ActivityThirdV2 extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_third_screenv2);
 
-        nextBtn = findViewById(R.id.submitButton);
-        nextBtn.setOnClickListener(new View.OnClickListener() {
+        submitButton = findViewById(R.id.submitButton);
+        submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivityThird21();
@@ -27,7 +27,7 @@ public class ActivityThirdV2 extends AppCompatActivity {
     }
 
     public void openActivityThird21() {
-        Intent intent = new Intent(this, ActivitySeventh21.class);
+        Intent intent = new Intent(this, ActivityThird21.class);
         startActivity(intent);
     }
 }

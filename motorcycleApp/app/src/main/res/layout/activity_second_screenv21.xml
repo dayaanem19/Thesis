@@ -138,4 +138,12 @@
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintStart_toEndOf="@+id/imageView4" />
 
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="85dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

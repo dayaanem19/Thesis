@@ -1,0 +1,50 @@
+package com.example.motorcycleapp;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ActivityFourthV2 extends AppCompatActivity {
+
+    private ImageView enterBtn;
+    private TextView textView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // On Screen load
+        setContentView(R.layout.activity_fourth_screenv2);
+
+        enterBtn = findViewById(R.id.enterButton);
+        enterBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityFifthV2();
+            }
+        });
+
+        textView = findViewById(R.id.textView11);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivitySixthV2();
+            }
+        });
+
+    }
+
+    public void openActivityFifthV2() {
+        Intent intent = new Intent(this, ActivityFifthV2.class);
+        startActivity(intent);
+    }
+
+    public void openActivitySixthV2() {
+        Intent intent = new Intent(this, ActivitySixthV2.class);
+        startActivity(intent);
+    }
+}

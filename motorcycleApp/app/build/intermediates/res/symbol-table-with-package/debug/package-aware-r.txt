@@ -1551,7 +1551,6 @@ id beginning
 id blocking
 id bluetoothSwitch
 id bottom
-id button
 id button2
 id button4
 id buttonPanel
@@ -1682,6 +1681,7 @@ id multiply
 id name
 id navigation_header_container
 id never
+id nextBtn
 id noScroll
 id none
 id normal
@@ -1823,6 +1823,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id verifyBtn
 id view_offset_helper
 id visible
 id withText

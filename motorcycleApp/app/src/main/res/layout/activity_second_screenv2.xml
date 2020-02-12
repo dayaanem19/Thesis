@@ -24,7 +24,7 @@
         app:srcCompat="@drawable/ic_authentication" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/verifyBtn"
         android:layout_width="317dp"
         android:layout_height="51dp"
         android:layout_marginStart="48dp"
