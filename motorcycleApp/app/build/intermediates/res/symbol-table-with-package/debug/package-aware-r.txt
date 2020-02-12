@@ -731,6 +731,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id forever
+id forgotPassword
 id gone
 id group_divider
 id groups
@@ -811,6 +812,7 @@ id start
 id submenuarrow
 id submitButton
 id submit_area
+id subtextFP
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -882,6 +884,7 @@ layout abc_tooltip
 layout activity_first_screen
 layout activity_fourth_screenv2
 layout activity_mainv2
+layout activity_second_screenv2
 layout activity_seventh_screenv2
 layout activity_seventh_screenv21
 layout activity_sixth_screenv2

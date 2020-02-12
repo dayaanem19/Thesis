@@ -25,24 +25,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="71dp"
-        android:text="TextView"
+        android:text="Forgot PIN"
         android:textColor="#2B2525"
         android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="monospace"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="129dp"
-        tools:text="Forgot PIN" />
+        tools:layout_editor_absoluteX="129dp"/>
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Please fill your details below"
         app:layout_constraintEnd_toEndOf="@+id/textView12"
         app:layout_constraintStart_toStartOf="@+id/textView12"
-        tools:layout_editor_absoluteY="103dp"
-        tools:text="Please fill your details below" />
+        tools:layout_editor_absoluteY="103dp"/>
 
     <EditText
         android:id="@+id/recoveryCode"

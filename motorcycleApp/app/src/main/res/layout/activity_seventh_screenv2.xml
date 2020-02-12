@@ -16,12 +16,13 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/subtextFP"
         app:srcCompat="@drawable/ic_undraw_forgot_password_gi2d" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
@@ -29,25 +30,23 @@
         android:layout_marginTop="71dp"
         android:layout_marginEnd="91dp"
         android:layout_marginRight="91dp"
-        android:text="TextView"
+        android:text="Forgot Password"
         android:textColor="#2B2525"
         android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Forgot Password" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/subtextFP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/textView12"
-        app:layout_constraintStart_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        tools:text="Please fill your details below" />
+        android:text="Please fill your details below"
+        app:layout_constraintEnd_toEndOf="@+id/forgotPassword"
+        app:layout_constraintStart_toStartOf="@+id/forgotPassword"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword"/>
 
     <EditText
         android:id="@+id/recoveryCode"
