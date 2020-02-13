@@ -6,7 +6,7 @@
 6    android:versionName="1.0" >
 7
 8    <uses-sdk
-9        android:minSdkVersion="16"
+9        android:minSdkVersion="23"
 9-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
 10        android:targetSdkVersion="29" />
 10-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
@@ -15,82 +15,89 @@
 12-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:6:5-40
 12-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:6:18-37
 13
-14    <application
-14-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:8:5-44:19
-15        android:allowBackup="true"
-15-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:9:9-35
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.1.0] /home/dayan/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/AndroidManifest.xml:24:18-86
-17        android:debuggable="true"
-18        android:icon="@mipmap/ic_launcher"
-18-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:10:9-43
-19        android:label="@string/app_name"
-19-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:11:9-41
-20        android:roundIcon="@mipmap/ic_launcher_round"
-20-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:12:9-54
-21        android:supportsRtl="true"
-21-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:13:9-35
-22        android:testOnly="true"
-23        android:theme="@style/AppTheme" >
-23-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:14:9-40
-24        <activity android:name="com.example.motorcycleapp.ActivityFirst" >
-24-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:15:9-21:20
-24-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:15:19-48
-25            <intent-filter>
-25-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:16:13-20:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:17:17-69
-26-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:17:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:19:17-77
-28-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:19:27-74
-29            </intent-filter>
-30        </activity>
-31        <activity android:name="com.example.motorcycleapp.ActivityMainV2" >
-31-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:22:9-23:20
-31-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:22:19-49
-32        </activity>
-33        <activity android:name="com.example.motorcycleapp.ActivityThirdV2" >
-33-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:24:9-25:20
-33-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:24:19-50
-34        </activity>
-35        <activity android:name="com.example.motorcycleapp.ActivityThird21" >
-35-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:26:9-27:20
-35-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:26:19-50
-36        </activity>
-37        <activity android:name="com.example.motorcycleapp.ActivitySeventh2" >
-37-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:28:9-29:20
-37-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:28:19-51
-38        </activity>
-39        <activity android:name="com.example.motorcycleapp.ActivitySeventh21" >
-39-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:30:9-31:20
-39-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:30:19-52
-40        </activity>
-41        <activity android:name="com.example.motorcycleapp.ActivitySecondV2" >
-41-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:32:9-33:20
-41-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:32:19-51
-42        </activity>
-43        <activity android:name="com.example.motorcycleapp.ActivitySecond21" >
-43-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:34:9-35:20
-43-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:34:19-51
-44        </activity>
-45        <activity android:name="com.example.motorcycleapp.ActivityFourthV2" >
-45-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:36:9-37:20
-45-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:36:19-51
-46        </activity>
-47        <activity android:name="com.example.motorcycleapp.ActivityFifthV2" >
-47-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:38:9-39:20
-47-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:38:19-50
-48        </activity>
-49        <activity android:name="com.example.motorcycleapp.ActivitySixthV2" >
-49-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:40:9-41:20
-49-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:40:19-50
-50        </activity>
-51        <activity android:name="com.example.motorcycleapp.ActivitySixthV21" >
-51-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:42:9-43:20
-51-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:42:19-51
-52        </activity>
-53    </application>
-54
-55</manifest>
+14    <uses-permission android:name="android.permission.BLUETOOTH" />
+14-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:8:5-67
+14-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:8:22-65
+15    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+15-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:9:5-73
+15-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:9:22-71
+16
+17    <application
+17-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:11:5-47:19
+18        android:allowBackup="true"
+18-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:12:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.1.0] /home/dayan/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:13:9-43
+22        android:label="@string/app_name"
+22-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:14:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:15:9-54
+24        android:supportsRtl="true"
+24-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:16:9-35
+25        android:testOnly="true"
+26        android:theme="@style/AppTheme" >
+26-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:17:9-40
+27        <activity android:name="com.example.motorcycleapp.ActivityFirst" >
+27-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:18:9-24:20
+27-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:18:19-48
+28            <intent-filter>
+28-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:19:13-23:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:20:17-69
+29-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:20:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:22:17-77
+31-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:22:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity android:name="com.example.motorcycleapp.ActivityMainV2" >
+34-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:25:9-26:20
+34-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:25:19-49
+35        </activity>
+36        <activity android:name="com.example.motorcycleapp.ActivityThirdV2" >
+36-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:27:9-28:20
+36-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:27:19-50
+37        </activity>
+38        <activity android:name="com.example.motorcycleapp.ActivityThird21" >
+38-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:29:9-30:20
+38-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:29:19-50
+39        </activity>
+40        <activity android:name="com.example.motorcycleapp.ActivitySeventh2" >
+40-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:31:9-32:20
+40-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:31:19-51
+41        </activity>
+42        <activity android:name="com.example.motorcycleapp.ActivitySeventh21" >
+42-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:33:9-34:20
+42-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:33:19-52
+43        </activity>
+44        <activity android:name="com.example.motorcycleapp.ActivitySecondV2" >
+44-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:35:9-36:20
+44-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:35:19-51
+45        </activity>
+46        <activity android:name="com.example.motorcycleapp.ActivitySecond21" >
+46-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:37:9-38:20
+46-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:37:19-51
+47        </activity>
+48        <activity android:name="com.example.motorcycleapp.ActivityFourthV2" >
+48-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:39:9-40:20
+48-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:39:19-51
+49        </activity>
+50        <activity android:name="com.example.motorcycleapp.ActivityFifthV2" >
+50-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:41:9-42:20
+50-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:41:19-50
+51        </activity>
+52        <activity android:name="com.example.motorcycleapp.ActivitySixthV2" >
+52-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:43:9-44:20
+52-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:43:19-50
+53        </activity>
+54        <activity android:name="com.example.motorcycleapp.ActivitySixthV21" >
+54-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:45:9-46:20
+54-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:45:19-51
+55        </activity>
+56    </application>
+57
+58</manifest>
