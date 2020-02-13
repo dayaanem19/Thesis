@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="413dp"
-        android:layout_height="321dp"
+        android:layout_width="435dp"
+        android:layout_height="348dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="26dp"
@@ -27,55 +27,57 @@
         android:id="@+id/verifyBtn"
         android:layout_width="317dp"
         android:layout_height="51dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="76dp"
         android:background="#86D2E5"
         android:text="Verify"
         android:textAllCaps="false"
         app:backgroundTint="#86D2E5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter the serial ID given to you by the company"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="Serial ID"
         android:textColor="#161414"
         android:textSize="24sp"
-        android:textStyle="bold"
 
+        android:textStyle="bold"
         app:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Enter the serial ID given to you by the company"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <EditText
         android:id="@+id/editText"
         android:layout_width="317dp"
         android:layout_height="51dp"
+        android:layout_marginTop="46dp"
         android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="Serial ID"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:maxLength="7"
+        android:hint=" Serial ID"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="470dp" />
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

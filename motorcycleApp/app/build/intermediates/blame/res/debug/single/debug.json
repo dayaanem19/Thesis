@@ -828,6 +828,10 @@
         "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v21_ic_lock_black_24dp.xml.flat",
+        "source": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/generated/res/pngs/debug/drawable-mdpi-v21/ic_lock_black_24dp.xml"
+    },
+    {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
@@ -2770,6 +2774,10 @@
     {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable_btn_checkbox_unchecked_to_checked_mtrl_animation.xml.flat",
         "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/drawable/btn_checkbox_unchecked_to_checked_mtrl_animation.xml"
+    },
+    {
+        "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_lock_black_24dp.png.flat",
+        "source": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/generated/res/pngs/debug/drawable-mdpi/ic_lock_black_24dp.png"
     },
     {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable_abc_btn_colored_material.xml.flat",

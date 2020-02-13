@@ -32,5 +32,8 @@ dependencies {
 
     //material io
     implementation 'com.google.android.material:material:1.2.0-alpha04'
+
+    //show password
+    implementation 'com.google.android.material:material:1.1.0-alpha10'
 }
 
