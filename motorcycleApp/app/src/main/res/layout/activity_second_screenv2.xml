@@ -9,40 +9,39 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="435dp"
-        android:layout_height="348dp"
+        android:layout_width="374dp"
+        android:layout_height="296dp"
         android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
         android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_authentication" />
 
-    <Button
-        android:id="@+id/verifyBtn"
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="317dp"
         android:layout_height="51dp"
-        android:layout_marginTop="59dp"
-        android:layout_marginBottom="76dp"
-        android:background="#86D2E5"
-        android:text="Verify"
-        android:textAllCaps="false"
-        app:backgroundTint="#86D2E5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:hint=" Serial ID"
+        android:inputType="textPassword"
+        android:maxLength="7"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:text="Serial ID"
         android:textColor="#161414"
         android:textSize="24sp"
@@ -50,7 +49,7 @@
         android:textStyle="bold"
         app:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -58,26 +57,28 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="4dp"
         android:text="Enter the serial ID given to you by the company"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-        android:id="@+id/editText"
+    <Button
+        android:id="@+id/verifyBtn"
         android:layout_width="317dp"
         android:layout_height="51dp"
-        android:layout_marginTop="46dp"
-        android:background="#FFFFFF"
-        android:drawableStart="@drawable/ic_lock_black_24dp"
-        android:maxLength="7"
-        android:hint=" Serial ID"
-        android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="30dp"
+        android:background="#86D2E5"
+        android:text="Verify"
+        android:textAllCaps="false"
+        app:backgroundTint="#86D2E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.764" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

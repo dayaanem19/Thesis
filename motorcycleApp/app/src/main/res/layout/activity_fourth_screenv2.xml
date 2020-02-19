@@ -7,63 +7,50 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="383dp"
-        android:layout_height="479dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_unlock"
-        android:contentDescription="TODO" />
+        android:layout_width="323dp"
+        android:layout_height="371dp"
+        android:layout_marginTop="84dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="@+id/pinNumber"
+        app:layout_constraintStart_toStartOf="@+id/pinNumber"
+        app:layout_constraintTop_toBottomOf="@+id/pinNumber"
+        app:srcCompat="@drawable/ic_unlock" />
 
     <EditText
         android:id="@+id/pinNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginRight="90dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="99dp"
         android:ems="10"
         android:hint="Pin Number"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterButton" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="248dp"
-        android:layout_marginLeft="248dp"
-        android:layout_marginTop="1dp"
         android:text="Forgot PIN?"
         app:layout_constraintEnd_toEndOf="@+id/pinNumber"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/pinNumber"
         app:layout_constraintTop_toBottomOf="@+id/pinNumber" />
 
     <ImageView
         android:id="@+id/enterButton"
         android:layout_width="49dp"
         android:layout_height="35dp"
-        android:layout_marginStart="346dp"
-        android:layout_marginLeft="346dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
         android:rotation="180"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/pinNumber"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_previous" />
 </androidx.constraintlayout.widget.ConstraintLayout>

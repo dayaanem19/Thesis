@@ -1552,7 +1552,6 @@ id beginning
 id blocking
 id bluetoothSwitch
 id bottom
-id button2
 id button4
 id buttonPanel
 id cancel_button
@@ -1615,6 +1614,7 @@ id fixed
 id floating
 id forever
 id forgotPassword
+id getPairedBtn
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1680,6 +1680,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id myListView
 id name
 id navigation_header_container
 id never
@@ -1724,7 +1725,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollView3
 id scrollable
 id search_badge
 id search_bar

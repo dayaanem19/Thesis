@@ -20,12 +20,12 @@
         "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/7f6c41cc2a14c0fbaa8d0166c17dc544/core-1.1.0/res/drawable/notification_icon_background.xml"
     },
     {
-        "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/anim_abc_shrink_fade_out_from_bottom.xml.flat",
-        "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_undraw_young_and_happy_hfpe.xml.flat",
         "source": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_undraw_young_and_happy_hfpe.xml"
+    },
+    {
+        "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/anim_abc_shrink_fade_out_from_bottom.xml.flat",
+        "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -48,12 +48,12 @@
         "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/xml_standalone_badge_gravity_top_start.xml.flat",
-        "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/8e4164242d330790f65e8f79ba433c7a/material-1.2.0-alpha04/res/xml/standalone_badge_gravity_top_start.xml"
-    },
-    {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/xml_standalone_badge_gravity_top_start.xml.flat",
+        "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/8e4164242d330790f65e8f79ba433c7a/material-1.2.0-alpha04/res/xml/standalone_badge_gravity_top_start.xml"
     },
     {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_code.png.flat",
@@ -112,12 +112,12 @@
         "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/color_mtrl_navigation_item_text_color.xml.flat",
         "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/8e4164242d330790f65e8f79ba433c7a/material-1.2.0-alpha04/res/color/mtrl_navigation_item_text_color.xml"
+    },
+    {
+        "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable_ic_bluetooth_searching_24px.xml.flat",
@@ -128,12 +128,12 @@
         "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/8e4164242d330790f65e8f79ba433c7a/material-1.2.0-alpha04/res/color/mtrl_card_view_ripple.xml"
     },
     {
-        "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_checked_mtrl_animation_interpolator_0.xml.flat",
-        "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
-    },
-    {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/color_mtrl_btn_text_btn_ripple_color.xml.flat",
         "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/8e4164242d330790f65e8f79ba433c7a/material-1.2.0-alpha04/res/color/mtrl_btn_text_btn_ripple_color.xml"
+    },
+    {
+        "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_checked_mtrl_animation_interpolator_0.xml.flat",
+        "source": "/home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
     },
     {
         "merged": "/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
