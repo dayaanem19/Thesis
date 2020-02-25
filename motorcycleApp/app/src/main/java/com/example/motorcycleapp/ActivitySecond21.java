@@ -117,6 +117,7 @@ public class ActivitySecond21 extends AppCompatActivity {
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                                 String selectedItem = (String) parent.getItemAtPosition(position);
                                 Log.v("ITEM SELECTED", selectedItem);
+                                pairDevices(view);
                             }
                         });
 
