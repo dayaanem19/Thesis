@@ -17,7 +17,7 @@ public class ActivityThirdV2 extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_third_screenv2);
 
-        submitButton = findViewById(R.id.submitButton);
+        submitButton = findViewById(R.id.resetBtn);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

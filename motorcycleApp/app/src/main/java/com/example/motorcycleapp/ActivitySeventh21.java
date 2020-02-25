@@ -27,7 +27,7 @@ public class ActivitySeventh21 extends AppCompatActivity {
             }
         });
 
-        submitBtn = findViewById(R.id.submitButton);
+        submitBtn = findViewById(R.id.resetBtn);
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1436,6 +1436,7 @@ drawable ic_bluetooth_searching_24px
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
+drawable ic_error
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_lock_black_24dp
@@ -1547,6 +1548,7 @@ id animation_view
 id async
 id auto
 id automatic
+id backBtn
 id barrier
 id beginning
 id blocking
@@ -1572,8 +1574,8 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id confirmPass
 id confirmPassword
-id confirmPinNumber
 id confirm_button
 id container
 id content
@@ -1595,12 +1597,12 @@ id dimensions
 id direct
 id disableHome
 id dropdown_menu
-id editText
 id edit_query
 id end
 id enterAlways
 id enterAlwaysCollapsed
 id enterButton
+id errorIcon
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1614,7 +1616,6 @@ id fixed
 id floating
 id forever
 id forgotPassword
-id getPairedBtn
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1649,8 +1650,10 @@ id list_item
 id loginButton
 id loginNowButton
 id lottie_layer_name
+id manualDesc
 id masked
 id message
+id messageAttempt
 id middle
 id mini
 id month_grid
@@ -1684,6 +1687,7 @@ id myListView
 id name
 id navigation_header_container
 id never
+id newPass
 id nextBtn
 id noScroll
 id none
@@ -1704,11 +1708,12 @@ id password_toggle
 id peekHeight
 id percent
 id pin
-id pinNumber
 id progress_circular
 id progress_horizontal
 id radio
 id recoveryCode
+id resetBtn
+id resetDesc
 id resetPic
 id restart
 id reverse
@@ -1726,6 +1731,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchBtn
 id search_badge
 id search_bar
 id search_button
@@ -1738,6 +1744,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id serialID
 id shortcut
 id showCustom
 id showHome
@@ -1763,7 +1770,6 @@ id standard
 id start
 id stretch
 id submenuarrow
-id submitButton
 id submit_area
 id subtextFP
 id tabMode
@@ -1780,6 +1786,8 @@ id test_checkbox_app_button_tint
 id text
 id text2
 id textEnd
+id textInputLayout
+id textInputLayout2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1798,7 +1806,6 @@ id textView20
 id textView21
 id textView3
 id textView4
-id textView5
 id textView6
 id textView7
 id textView8

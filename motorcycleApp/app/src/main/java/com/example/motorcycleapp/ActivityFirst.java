@@ -25,7 +25,6 @@ public class ActivityFirst extends AppCompatActivity {
                 openActivityMainV2();
             }
         }));
-
     }
 
     public void openActivityMainV2() {

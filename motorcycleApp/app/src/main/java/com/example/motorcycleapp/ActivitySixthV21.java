@@ -19,7 +19,7 @@ public class ActivitySixthV21 extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_sixth_screenv21);
 
-        submitButton = findViewById(R.id.submitButton);
+        submitButton = findViewById(R.id.resetBtn);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

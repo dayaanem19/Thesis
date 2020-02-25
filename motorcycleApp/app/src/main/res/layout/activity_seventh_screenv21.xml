@@ -9,11 +9,10 @@
 
     <ImageView
         android:id="@+id/resetPic"
-        android:layout_width="410dp"
-        android:layout_height="273dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
+        android:layout_width="376dp"
+        android:layout_height="267dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18"
@@ -47,19 +46,22 @@
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <Button
-        android:id="@+id/submitButton"
+        android:id="@+id/resetBtn"
+        style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="317dp"
-        android:layout_height="51dp"
+        android:layout_height="65dp"
         android:layout_marginTop="48dp"
         android:background="#86D2E5"
+        android:backgroundTint="#86D2E5"
         android:text="Reset Password"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/confirmPinNumber"
-        app:layout_constraintStart_toStartOf="@+id/confirmPinNumber"
+        android:textColor="#0E0B0B"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPass"
+        app:layout_constraintStart_toStartOf="@+id/confirmPass"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <EditText
-        android:id="@+id/pinNumber"
+        android:id="@+id/newPass"
         android:layout_width="317dp"
         android:layout_height="55dp"
         android:layout_marginTop="33dp"
@@ -67,7 +69,8 @@
         android:drawableLeft="@drawable/ic_action_pass"
         android:ems="10"
         android:hint=" New Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="@+id/resetPic"
         app:layout_constraintStart_toStartOf="@+id/resetPic"
@@ -77,13 +80,13 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="8dp"
         android:text="Sign in"
         android:textColor="#1B1515"
-        app:layout_constraintEnd_toEndOf="@+id/confirmPinNumber"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPass"
         app:layout_constraintHorizontal_bias="0.698"
-        app:layout_constraintStart_toStartOf="@+id/confirmPinNumber"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPinNumber" />
+        app:layout_constraintStart_toStartOf="@+id/confirmPass"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPass" />
 
     <TextView
         android:id="@+id/textView19"
@@ -91,24 +94,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
         android:text="Just Remembered?"
-        app:layout_constraintEnd_toEndOf="@+id/confirmPinNumber"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPass"
         app:layout_constraintHorizontal_bias="0.358"
-        app:layout_constraintStart_toStartOf="@+id/confirmPinNumber"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPinNumber" />
+        app:layout_constraintStart_toStartOf="@+id/confirmPass"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPass" />
 
     <EditText
-        android:id="@+id/confirmPinNumber"
+        android:id="@+id/confirmPass"
         android:layout_width="317dp"
         android:layout_height="55dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="16dp"
         android:background="#FFFFFF"
         android:drawableLeft="@drawable/ic_action_pass"
         android:ems="10"
         android:hint=" Confirm New Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
         android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/pinNumber"
-        app:layout_constraintStart_toStartOf="@+id/pinNumber"
-        app:layout_constraintTop_toBottomOf="@+id/pinNumber" />
+        app:layout_constraintEnd_toEndOf="@+id/newPass"
+        app:layout_constraintStart_toStartOf="@+id/newPass"
+        app:layout_constraintTop_toBottomOf="@+id/newPass" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

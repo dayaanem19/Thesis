@@ -35,30 +35,37 @@
         app:lottie_loop="true" />
 
     <Button
-        android:id="@+id/getPairedBtn"
+        android:id="@+id/searchBtn"
+        style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="317dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="80dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="56dp"
         android:background="#86D2E5"
-        android:text="Get Paired Device"
+        android:text="Search Devices"
         android:textAllCaps="false"
+        android:textColor="#0E0B0B"
         app:backgroundTint="#86D2E5"
         app:layout_constraintEnd_toEndOf="@+id/myListView"
+        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="@+id/myListView"
         app:layout_constraintTop_toBottomOf="@+id/myListView" />
 
     <Button
         android:id="@+id/nextBtn"
+        style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="317dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
         android:background="#86D2E5"
+        android:backgroundTint="#FFFFFF"
         android:text="Next"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/getPairedBtn"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/getPairedBtn"
-        app:layout_constraintTop_toBottomOf="@+id/getPairedBtn" />
+        android:textColor="#1F1818"
+        app:iconTint="#0F0D0D"
+        app:layout_constraintEnd_toEndOf="@+id/searchBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/searchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/searchBtn" />
 
     <TextView
         android:id="@+id/textView3"

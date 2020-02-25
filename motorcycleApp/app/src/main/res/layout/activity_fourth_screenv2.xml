@@ -11,21 +11,22 @@
         android:layout_height="371dp"
         android:layout_marginTop="84dp"
         android:contentDescription="TODO"
-        app:layout_constraintEnd_toEndOf="@+id/pinNumber"
-        app:layout_constraintStart_toStartOf="@+id/pinNumber"
-        app:layout_constraintTop_toBottomOf="@+id/pinNumber"
+        app:layout_constraintEnd_toEndOf="@+id/newPass"
+        app:layout_constraintStart_toStartOf="@+id/newPass"
+        app:layout_constraintTop_toBottomOf="@+id/newPass"
         app:srcCompat="@drawable/ic_unlock" />
 
     <EditText
-        android:id="@+id/pinNumber"
+        android:id="@+id/newPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="99dp"
         android:layout_marginTop="159dp"
         android:layout_marginEnd="99dp"
         android:ems="10"
+        android:maxLength="7"
         android:hint="Pin Number"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,10 +36,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot PIN?"
-        app:layout_constraintEnd_toEndOf="@+id/pinNumber"
+        app:layout_constraintEnd_toEndOf="@+id/newPass"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/pinNumber"
-        app:layout_constraintTop_toBottomOf="@+id/pinNumber" />
+        app:layout_constraintStart_toStartOf="@+id/newPass"
+        app:layout_constraintTop_toBottomOf="@+id/newPass" />
 
     <ImageView
         android:id="@+id/enterButton"
@@ -50,7 +51,7 @@
         android:rotation="180"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/pinNumber"
+        app:layout_constraintStart_toStartOf="@+id/newPass"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_previous" />
 </androidx.constraintlayout.widget.ConstraintLayout>

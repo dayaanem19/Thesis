@@ -23,11 +23,12 @@
         app:srcCompat="@drawable/ic_authentication" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/serialID"
         android:layout_width="317dp"
         android:layout_height="51dp"
         android:layout_marginTop="32dp"
         android:background="#FFFFFF"
+        android:drawablePadding="10dp"
         android:drawableStart="@drawable/ic_lock_black_24dp"
         android:hint=" Serial ID"
         android:inputType="textPassword"
@@ -67,18 +68,19 @@
     <Button
         android:id="@+id/verifyBtn"
         android:layout_width="317dp"
-        android:layout_height="51dp"
+        android:layout_height="65dp"
         android:layout_marginTop="59dp"
         android:layout_marginBottom="30dp"
         android:background="#86D2E5"
         android:text="Verify"
         android:textAllCaps="false"
+        android:textColor="#110D0D"
         app:backgroundTint="#86D2E5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@+id/serialID"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/serialID"
+        app:layout_constraintTop_toBottomOf="@+id/serialID"
         app:layout_constraintVertical_bias="0.764" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,18 +17,18 @@ public class ActivityThird21 extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_third_screenv21);
 
-        submitButton = findViewById(R.id.submitButton);
+        submitButton = findViewById(R.id.resetBtn);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivityFourthV2();
+                openActivityMainV2();
             }
         });
 
     }
 
-    public void openActivityFourthV2() {
-        Intent intent = new Intent(this, ActivityFourthV2.class);
+    public void openActivityMainV2() {
+        Intent intent = new Intent(this, ActivityMainV2.class);
         startActivity(intent);
     }
 }

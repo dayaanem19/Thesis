@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,7 @@ public class ActivityMainV2 extends AppCompatActivity {
     private Button signUpBtn;
     private TextView forgotPassword;
     private Button loginButton;
+    private ImageView backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +27,17 @@ public class ActivityMainV2 extends AppCompatActivity {
         signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivitySecondV2();
+                openActivitySecond21();
             }
         });
+
+        backBtn = findViewById(R.id.backBtn);
+        backBtn.setOnClickListener(new View.OnClickListener() {
+                                       @Override
+                                       public void onClick(View v) {
+                                           openActivityFirst();
+                                       }
+                                   });
 
         forgotPassword = findViewById(R.id.textView2);
         forgotPassword.setOnClickListener(new View.OnClickListener() {
@@ -47,8 +57,8 @@ public class ActivityMainV2 extends AppCompatActivity {
 
     }
 
-    public void openActivitySecondV2() {
-        Intent intent = new Intent(this, ActivitySecondV2.class);
+    public void openActivitySecond21() {
+        Intent intent = new Intent(this, ActivitySecond21.class);
         startActivity(intent);
 
         // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
@@ -68,4 +78,10 @@ public class ActivityMainV2 extends AppCompatActivity {
         // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
     }
 
+    public void openActivityFirst() {
+            Intent intent = new Intent(this, ActivityFirst.class);
+            startActivity(intent);
+
+            // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
+        }
 }
