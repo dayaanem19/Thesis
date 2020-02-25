@@ -15,24 +15,23 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.Switch;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.lang.reflect.Method;
 import java.util.Set;
 
 public class ActivitySecond21 extends AppCompatActivity {
 
     private Button searchBtn;
-    private Switch bluetoothSwitch;
     private Button nextBtn;
+    private Switch bluetoothSwitch;
     private BluetoothAdapter myBluetoothAdapter;
-    private static final int REQUEST_ENABLE_BT = 1;
+    private ListView myListView;
     private Set<BluetoothDevice> pairedDevices;
     private ArrayAdapter<String> BTArrayAdapter;
-    private ListView myListView;
+    private static final int REQUEST_ENABLE_BT = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +72,7 @@ public class ActivitySecond21 extends AppCompatActivity {
 
             Log.d("SAMPLE", String.valueOf(bluetoothSwitch.isChecked()));
 
+            // If switch is already turned on or bluetooth is already enabled
             if (bluetoothSwitch.isChecked()) {
                 // Search devices button
                 searchBtn = findViewById(R.id.searchBtn);
@@ -80,6 +80,16 @@ public class ActivitySecond21 extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         searchDevices(v);
+                    }
+                });
+
+                // On discovered item click
+                myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        String selectedItem = (String) parent.getItemAtPosition(position);
+                        Log.v("SAMPLE", "Item selected: " + selectedItem);
+//                                pairDevices(view);
                     }
                 });
             }
@@ -116,8 +126,8 @@ public class ActivitySecond21 extends AppCompatActivity {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                                 String selectedItem = (String) parent.getItemAtPosition(position);
-                                Log.v("ITEM SELECTED", selectedItem);
-                                pairDevices(view);
+                                Log.v("SAMPLE", "Item selected: " + selectedItem);
+//                                pairDevices(view);
                             }
                         });
 
