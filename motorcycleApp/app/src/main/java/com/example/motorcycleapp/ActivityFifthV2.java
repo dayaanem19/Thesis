@@ -18,6 +18,7 @@ public class ActivityFifthV2 extends AppCompatActivity {
     Button changeKeyBtn;
     TextView manualDesc;
     TextView resetDesc;
+    TextView autoDesc;
     Button ResetBtn;
 
     private TextView logoutBtn;
@@ -46,6 +47,46 @@ public class ActivityFifthV2 extends AppCompatActivity {
         manualDesc=findViewById(R.id.manualDesc);
         ResetBtn=findViewById(R.id.ResetBtn);
         resetDesc=findViewById(R.id.resetDesc);
+        autoDesc=findViewById(R.id.autoDesc);
+
+//        //showing the auto check mark
+//        ResetBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                animation_view.setAnimation("automatic_check.json");
+//                animation_view.playAnimation();
+//
+//                //showing the textview description of auto change
+//                animation_view.addAnimatorListener(new Animator.AnimatorListener() {
+//                    @Override
+//                    public void onAnimationStart(Animator animation) {
+//                        manualDesc.setVisibility(View.INVISIBLE);
+//                        resetDesc.setVisibility(View.INVISIBLE);
+//                    }
+//
+//                    @Override
+//                    public void onAnimationEnd(Animator animation) {
+//                        autoDesc.setVisibility(View.VISIBLE);
+//                        if (autoDesc.getVisibility() == View.VISIBLE) {
+//                            manualDesc.setVisibility(View.INVISIBLE);
+//                            resetDesc.setVisibility(View.INVISIBLE);
+//                        }
+//                        else {
+//                            autoDesc.setVisibility(View.VISIBLE);
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onAnimationCancel(Animator animation) {
+//                    }
+//
+//                    @Override
+//                    public void onAnimationRepeat(Animator animation) {
+//                    }
+//                });
+//            }
+//        });
+
 
         //show the manual change of checkmark
         changeKeyBtn.setOnClickListener(new View.OnClickListener() {
@@ -59,15 +100,20 @@ public class ActivityFifthV2 extends AppCompatActivity {
                     @Override
                     public void onAnimationStart(Animator animation) {
                         resetDesc.setVisibility(View.INVISIBLE);
+                        autoDesc.setVisibility(View.INVISIBLE);
+                        manualDesc.setVisibility(View.INVISIBLE);
                     }
 
                     @Override
                     public void onAnimationEnd(Animator animation) {
                         manualDesc.setVisibility(View.VISIBLE);
-                        if (manualDesc.getVisibility() == View.VISIBLE)
+                        if (manualDesc.getVisibility() == View.VISIBLE) {
                             resetDesc.setVisibility(View.INVISIBLE);
-                        else
+                            autoDesc.setVisibility(View.INVISIBLE);
+                        }
+                        else {
                             resetDesc.setVisibility(View.VISIBLE);
+                        }
                     }
 
                     @Override
@@ -82,7 +128,7 @@ public class ActivityFifthV2 extends AppCompatActivity {
         });
 
 
-//        //showing the reset check mark
+        //showing the reset check mark
         ResetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,15 +140,19 @@ public class ActivityFifthV2 extends AppCompatActivity {
                     @Override
                     public void onAnimationStart(Animator animation) {
                         manualDesc.setVisibility(View.INVISIBLE);
+                        autoDesc.setVisibility(View.INVISIBLE);
                     }
 
                     @Override
                     public void onAnimationEnd(Animator animation) {
                         resetDesc.setVisibility(View.VISIBLE);
-                        if (resetDesc.getVisibility() == View.VISIBLE)
+                        if (resetDesc.getVisibility() == View.VISIBLE) {
                             manualDesc.setVisibility(View.INVISIBLE);
-                        else
+                            autoDesc.setVisibility(View.INVISIBLE);
+                        }
+                        else {
                             manualDesc.setVisibility(View.VISIBLE);
+                        }
                     }
 
                     @Override

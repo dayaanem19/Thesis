@@ -10,12 +10,12 @@
 
     <ImageView
         android:id="@+id/backBtn"
-        android:layout_width="55dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="40dp"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="343dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="156dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_previous" />
@@ -53,29 +53,55 @@
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="317dp"
         android:layout_height="65dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="144dp"
         android:background="#86D2E5"
         android:backgroundTint="#86D2E5"
         android:text="Get Login"
         android:textAllCaps="false"
         android:textColor="#1F1818"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/messageAttempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:text="Account temporarily disabled. Please\n see the manufacturer to retrieve\n your account."
+        android:textColor="#B00020"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/errorIcon"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/errorIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toTopOf="@+id/messageAttempt"
+        app:srcCompat="@drawable/ic_error" />
 
     <Button
         android:id="@+id/signUpbutton"
         android:layout_width="317dp"
         android:layout_height="65dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
         android:text="Create Account"
         android:textAllCaps="false"
         android:textColor="#201919"
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
@@ -94,8 +120,8 @@
         android:id="@+id/textInputLayout2"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="31dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
@@ -119,7 +145,7 @@
         android:id="@+id/textInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
         android:layout_marginTop="67dp"
         android:layout_marginEnd="46dp"
@@ -137,31 +163,6 @@
             android:inputType="textPersonName"
             android:paddingLeft="10dp" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/messageAttempt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="60dp"
-        android:text="Account temporarily disabled. Please\n see the manufacturer to retrieve\n your account."
-        android:visibility="invisible"
-        android:textColor="#B00020"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/errorIcon"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <ImageView
-        android:id="@+id/errorIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toTopOf="@+id/messageAttempt"
-        app:srcCompat="@drawable/ic_error" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

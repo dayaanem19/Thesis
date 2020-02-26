@@ -61,22 +61,29 @@
         app:layout_constraintStart_toStartOf="@+id/confirmPass"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/newPass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
-        android:background="#FFFFFF"
-        android:drawableLeft="@drawable/ic_action_pin"
-        android:ems="10"
-        android:hint=" New PIN Number"
-        android:inputType="textPassword"
-        android:maxLength="7"
-        android:paddingLeft="10dp"
-        android:drawablePadding="10dp"
         app:layout_constraintEnd_toEndOf="@+id/resetPic"
         app:layout_constraintStart_toStartOf="@+id/resetPic"
-        app:layout_constraintTop_toBottomOf="@+id/resetPic" />
+        app:layout_constraintTop_toBottomOf="@+id/resetPic"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="317dp"
+            android:layout_height="55dp"
+            android:drawableStart="@drawable/ic_action_pin"
+            android:drawablePadding="10dp"
+            android:ems="5"
+            android:hint="New PIN"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView20"
@@ -101,21 +108,27 @@
         app:layout_constraintStart_toStartOf="@+id/confirmPass"
         app:layout_constraintTop_toBottomOf="@+id/confirmPass" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/confirmPass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#FFFFFF"
-        android:drawableLeft="@drawable/ic_action_pin"
-        android:ems="10"
-        android:hint=" Confirm New PIN Number"
-        android:inputType="textPassword"
-        android:maxLength="7"
-        android:drawablePadding="10dp"
-        android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="@+id/newPass"
         app:layout_constraintStart_toStartOf="@+id/newPass"
-        app:layout_constraintTop_toBottomOf="@+id/newPass" />
+        app:layout_constraintTop_toBottomOf="@+id/newPass"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText2"
+            android:layout_width="317dp"
+            android:layout_height="55dp"
+            android:drawableStart="@drawable/ic_action_pin"
+            android:drawablePadding="10dp"
+            android:ems="5"
+            android:hint="Confirm New PIN"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

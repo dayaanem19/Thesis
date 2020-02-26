@@ -1437,6 +1437,7 @@ drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
 drawable ic_error
+drawable ic_helmet
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_lock_black_24dp
@@ -1547,6 +1548,7 @@ id always
 id animation_view
 id async
 id auto
+id autoDesc
 id automatic
 id backBtn
 id barrier
@@ -1575,7 +1577,6 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirmPass
-id confirmPassword
 id confirm_button
 id container
 id content
@@ -1786,6 +1787,8 @@ id test_checkbox_app_button_tint
 id text
 id text2
 id textEnd
+id textInputEditText
+id textInputEditText2
 id textInputLayout
 id textInputLayout2
 id textSpacerNoButtons

@@ -167,10 +167,10 @@
                         </option>
                         <option name="values">
                           <map>
+                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="b00020" />
-                            <entry key="opacityPercent" value="68" />
-                            <entry key="outputName" value="ic_error" />
-                            <entry key="sourceFile" value="$PROJECT_DIR$/../../../Personal/Thesis_Files/vector/lock-24px.svg" />
+                            <entry key="outputName" value="ic_helmet" />
+                            <entry key="sourceFile" value="$PROJECT_DIR$/../../../Personal/Thesis_Files/vector/helmet.svg" />
                           </map>
                         </option>
                       </PersistentState>

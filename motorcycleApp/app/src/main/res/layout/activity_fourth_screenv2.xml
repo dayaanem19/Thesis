@@ -25,6 +25,7 @@
         android:layout_marginEnd="99dp"
         android:ems="10"
         android:maxLength="7"
+        android:textAlignment="center"
         android:hint="Pin Number"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,14 +44,13 @@
 
     <ImageView
         android:id="@+id/enterButton"
-        android:layout_width="49dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="244dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
         android:rotation="180"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/newPass"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_previous" />

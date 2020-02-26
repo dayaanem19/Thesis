@@ -10,8 +10,8 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view"
-        android:layout_width="292dp"
-        android:layout_height="202dp"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
         android:layout_marginStart="43dp"
         android:layout_marginTop="110dp"
         android:layout_marginEnd="27dp"
@@ -82,14 +82,14 @@
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="317dp"
         android:layout_height="65dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="148dp"
         android:background="#86D2E5"
         android:text="Change Key"
         android:textAllCaps="false"
         android:textColor="#131010"
         app:backgroundTint="#86D2E5"
         app:layout_constraintEnd_toEndOf="@+id/animation_view"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="@+id/animation_view"
         app:layout_constraintTop_toBottomOf="@+id/animation_view" />
 
@@ -98,7 +98,7 @@
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="317dp"
         android:layout_height="65dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
         android:text="Reset Key"
@@ -126,5 +126,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/autoDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="You have automatically changed\n a keycode successfully."
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/animation_view"
+        app:layout_constraintTop_toBottomOf="@+id/animation_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

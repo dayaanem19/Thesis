@@ -17,37 +17,56 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_undraw_security_o890" />
 
-    <EditText
-        android:id="@+id/confirmPassword"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#FFFFFF"
-        android:drawableLeft="@drawable/ic_action_pass"
-        android:ems="10"
-        android:hint=" Confirm Password"
-        android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        android:drawablePadding="10dp"
         app:layout_constraintEnd_toEndOf="@+id/password"
         app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText2"
+            android:layout_width="317dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/ic_action_pass"
+            android:drawablePadding="10dp"
+            android:ems="5"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:background="#FFFFFF"
-        android:drawableLeft="@drawable/ic_action_pass"
-        android:ems="10"
-        android:hint=" Password"
-        android:inputType="textPassword"
-        android:drawablePadding="10dp"
-        android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="317dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="36dp"
+            android:drawableStart="@drawable/ic_action_pass"
+            android:drawablePadding="10dp"
+            android:ems="5"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView13"
@@ -74,8 +93,9 @@
         android:text="Create Account"
         android:textAllCaps="false"
         android:textColor="#110D0D"
-        app:layout_constraintEnd_toEndOf="@+id/confirmPassword"
-        app:layout_constraintStart_toStartOf="@+id/confirmPassword"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/confirmPass"
+        app:layout_constraintStart_toStartOf="@+id/confirmPass"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPass" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

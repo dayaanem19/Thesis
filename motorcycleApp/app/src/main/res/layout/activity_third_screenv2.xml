@@ -18,39 +18,50 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_undraw_security_o890" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="36dp"
-        android:background="#FFFFFF"
-        android:drawableLeft="@drawable/ic_action_user"
-        android:ems="10"
-        android:hint=" Name"
-        android:drawablePadding="10dp"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="317dp"
+            android:layout_height="55dp"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:drawablePadding="10dp"
+            android:ems="5"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/newPass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#FFFFFF"
-        android:drawableLeft="@drawable/ic_action_pin"
-        android:ems="10"
-        android:hint=" PIN Number"
-        android:inputType="numberPassword"
-        android:drawablePadding="10dp"
-        android:paddingLeft="10dp"
-        android:maxLength="7"
         app:layout_constraintEnd_toEndOf="@+id/name"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="317dp"
+            android:layout_height="55dp"
+            android:drawableStart="@drawable/ic_action_pin"
+            android:drawablePadding="10dp"
+            android:ems="5"
+            android:hint="PIN Number"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView13"
@@ -71,14 +82,13 @@
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="317dp"
         android:layout_height="65dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="118dp"
         android:background="#86D2E5"
         android:backgroundTint="#86D2E5"
         android:text="Next"
         android:textAllCaps="false"
         android:textColor="#0E0A0A"
         app:layout_constraintEnd_toEndOf="@+id/newPass"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/newPass"
         app:layout_constraintTop_toBottomOf="@+id/newPass" />
 
