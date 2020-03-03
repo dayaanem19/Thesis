@@ -36,6 +36,10 @@ public class ActivitySecond21 extends AppCompatActivity {
     private ArrayAdapter<String> BTArrayAdapter;
     private static final int REQUEST_ENABLE_BT = 1;
 
+    //to disable the functionality of back button in android phones
+    @Override
+    public void onBackPressed(){
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

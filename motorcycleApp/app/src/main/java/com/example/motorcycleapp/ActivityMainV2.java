@@ -15,6 +15,7 @@ public class ActivityMainV2 extends AppCompatActivity {
     private TextView forgotPassword;
     private Button loginButton;
     private ImageView backBtn;
+    private long backPressedTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,11 @@ public class ActivityMainV2 extends AppCompatActivity {
 
     }
 
+    //to disable the functionality of back button in android phones
+    @Override
+    public void onBackPressed(){
+    }
+
     public void openActivitySecond21() {
         Intent intent = new Intent(this, ActivitySecond21.class);
         startActivity(intent);
@@ -84,4 +90,5 @@ public class ActivityMainV2 extends AppCompatActivity {
 
             // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
         }
+
 }

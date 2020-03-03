@@ -23,6 +23,10 @@ public class ActivityFifthV2 extends AppCompatActivity {
 
     private TextView logoutBtn;
 
+    //to disable the functionality of back button in android phones
+    @Override
+    public void onBackPressed(){
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

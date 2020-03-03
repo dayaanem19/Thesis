@@ -13,6 +13,11 @@ public class ActivitySixthV2 extends AppCompatActivity {
     private TextView textView;
     private Button nextBtn;
 
+    //to disable the functionality of back button in android phones
+    @Override
+    public void onBackPressed(){
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

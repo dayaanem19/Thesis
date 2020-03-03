@@ -12,6 +12,11 @@ import static androidx.core.content.ContextCompat.startActivity;
 public class resetPass extends AppCompatActivity {
     private Button loginButton;
 
+    //to disable the functionality of back button in android phones
+    @Override
+    public void onBackPressed(){
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

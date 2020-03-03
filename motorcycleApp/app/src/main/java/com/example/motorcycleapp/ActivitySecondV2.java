@@ -11,6 +11,11 @@ public class ActivitySecondV2 extends AppCompatActivity {
 
     private Button verifyBtn;
 
+    //to disable the functionality of back button in android phones
+    @Override
+    public void onBackPressed(){
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

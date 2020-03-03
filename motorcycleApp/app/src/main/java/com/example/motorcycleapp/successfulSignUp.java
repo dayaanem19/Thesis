@@ -10,6 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class successfulSignUp extends AppCompatActivity {
     private Button loginButton;
 
+    //to disable the functionality of back button in android phones
+    @Override
+    public void onBackPressed(){
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
