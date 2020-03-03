@@ -17,6 +17,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_undraw_security_o890" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Please fill your details below"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/textView13" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/confirmPass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -88,11 +99,13 @@
         android:layout_width="317dp"
         android:layout_height="65dp"
         android:layout_marginTop="108dp"
+        android:layout_marginBottom="36dp"
         android:background="#86D2E5"
         android:backgroundTint="#86D2E5"
         android:text="Create Account"
         android:textAllCaps="false"
-        android:textColor="#110D0D"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/confirmPass"
         app:layout_constraintStart_toStartOf="@+id/confirmPass"
         app:layout_constraintTop_toBottomOf="@+id/confirmPass" />

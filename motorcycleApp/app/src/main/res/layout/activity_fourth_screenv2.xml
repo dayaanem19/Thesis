@@ -5,14 +5,42 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/enterButton"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="317dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#86d2e5"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="323dp"
-        android:layout_height="371dp"
-        android:layout_marginTop="84dp"
+        android:layout_height="340dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="48dp"
         android:contentDescription="TODO"
-        app:layout_constraintEnd_toEndOf="@+id/newPass"
-        app:layout_constraintStart_toStartOf="@+id/newPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newPass"
         app:srcCompat="@drawable/ic_unlock" />
 
@@ -20,16 +48,14 @@
         android:id="@+id/newPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginTop="159dp"
-        android:layout_marginEnd="99dp"
+        android:layout_marginTop="120dp"
         android:ems="10"
-        android:maxLength="7"
-        android:textAlignment="center"
         android:hint="Pin Number"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:maxLength="7"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -42,16 +68,4 @@
         app:layout_constraintStart_toStartOf="@+id/newPass"
         app:layout_constraintTop_toBottomOf="@+id/newPass" />
 
-    <ImageView
-        android:id="@+id/enterButton"
-        android:layout_width="95dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="5dp"
-        android:rotation="180"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/newPass"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_previous" />
 </androidx.constraintlayout.widget.ConstraintLayout>

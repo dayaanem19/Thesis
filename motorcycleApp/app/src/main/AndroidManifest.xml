@@ -44,6 +44,13 @@
         </activity>
         <activity android:name=".ActivitySixthV21">
         </activity>
+        <activity android:name=".resetPass">
+        </activity>
+        <activity android:name=".resetPin">
+        </activity>
+        <activity android:name=".successfulSignUp">
+        </activity>
+
     </application>
 
 </manifest>

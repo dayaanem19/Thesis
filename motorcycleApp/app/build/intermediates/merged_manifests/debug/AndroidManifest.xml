@@ -53,6 +53,12 @@
         </activity>
         <activity android:name="com.example.motorcycleapp.ActivitySixthV21" >
         </activity>
+        <activity android:name="com.example.motorcycleapp.resetPass" >
+        </activity>
+        <activity android:name="com.example.motorcycleapp.resetPin" >
+        </activity>
+        <activity android:name="com.example.motorcycleapp.successfulSignUp" >
+        </activity>
     </application>
 
 </manifest>

@@ -13,18 +13,22 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.Set;
 
 public class ActivitySecond21 extends AppCompatActivity {
 
     private Button searchBtn;
     private Button nextBtn;
+    private ImageView backBtn;
     private Switch bluetoothSwitch;
     private BluetoothAdapter myBluetoothAdapter;
     private ListView myListView;
@@ -48,6 +52,14 @@ public class ActivitySecond21 extends AppCompatActivity {
             }
         });
 
+        backBtn = findViewById(R.id.backBtn);
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityMainV2();
+            }
+        });
+
         myListView = findViewById(R.id.myListView);
 
         // create the arrayAdapter that contains the BTDevices, and set it to the ListView
@@ -55,6 +67,7 @@ public class ActivitySecond21 extends AppCompatActivity {
         myListView.setAdapter(BTArrayAdapter);
 
         myBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
         if(myBluetoothAdapter == null) {
             nextBtn.setEnabled(false);
             searchBtn.setEnabled(false);
@@ -88,8 +101,21 @@ public class ActivitySecond21 extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         String selectedItem = (String) parent.getItemAtPosition(position);
+                        pairedDevices = myBluetoothAdapter.getBondedDevices();
+                        final ArrayList<BluetoothDevice> bluetoothDevices = new ArrayList<>();
+                        bluetoothDevices.addAll(bluetoothDevices);
                         Log.v("SAMPLE", "Item selected: " + selectedItem);
+                        if (bluetoothDevices.size() > 0) {
+                            BluetoothDevice device = bluetoothDevices.get(position);
+//                        if (device.getBondState()!=BluetoothDevice.BOND_BONDED){
+                            pairDevice(device);
+
+
 //                                pairDevices(view);
+                        }
+                        else {
+                            Toast.makeText(ActivitySecond21.this, "unable to connect", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
             }
@@ -149,6 +175,13 @@ public class ActivitySecond21 extends AppCompatActivity {
         // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
     }
 
+    public void openActivityMainV2() {
+       Intent intent = new Intent(this, ActivityMainV2.class);
+        startActivity(intent);
+
+        // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
+    }
+
     final BroadcastReceiver bReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
@@ -200,7 +233,14 @@ public class ActivitySecond21 extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"Bluetooth turned off",
                 Toast.LENGTH_LONG).show();
     }
-
+    private void pairDevice(BluetoothDevice device) {
+        try {
+            Method method = device.getClass().getMethod("createBond", (Class[]) null);
+            method.invoke(device, (Object[]) null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     public void pairDevices(View v) {
         // get paired devices
         pairedDevices = myBluetoothAdapter.getBondedDevices();

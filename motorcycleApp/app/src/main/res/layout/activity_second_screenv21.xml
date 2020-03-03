@@ -7,6 +7,19 @@
     android:background="#F8FAFB"
     android:orientation="vertical">
 
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="312dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_previous" />
+
     <Switch
         android:id="@+id/bluetoothSwitch"
         android:layout_width="123dp"
@@ -43,8 +56,9 @@
         android:background="#86D2E5"
         android:text="Search Devices"
         android:textAllCaps="false"
-        android:textColor="#0E0B0B"
+        android:textColor="#FFFFFF"
         app:backgroundTint="#86D2E5"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
         app:layout_constraintEnd_toEndOf="@+id/myListView"
         app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="@+id/myListView"
@@ -55,13 +69,15 @@
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="317dp"
         android:layout_height="65dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="29dp"
         android:background="#86D2E5"
         android:backgroundTint="#FFFFFF"
         android:text="Next"
         android:textAllCaps="false"
-        android:textColor="#1F1818"
+        android:textColor="#86D2E5"
         app:iconTint="#0F0D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/searchBtn"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/searchBtn"

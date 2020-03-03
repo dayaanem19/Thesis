@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ActivitySeventh21 extends AppCompatActivity {
     private TextView signIn;
-    private Button submitBtn;
+    private Button resetBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,17 +27,22 @@ public class ActivitySeventh21 extends AppCompatActivity {
             }
         });
 
-        submitBtn = findViewById(R.id.resetBtn);
-        submitBtn.setOnClickListener(new View.OnClickListener() {
+        resetBtn = findViewById(R.id.resetBtn);
+        resetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivityMainV2();
+                openresetPass();
             }
         });
     }
 
     public void openActivityMainV2() {
         Intent intent = new Intent(this, ActivityMainV2.class);
+        startActivity(intent);
+    }
+
+    public void openresetPass() {
+        Intent intent = new Intent(this, resetPass.class);
         startActivity(intent);
     }
 }

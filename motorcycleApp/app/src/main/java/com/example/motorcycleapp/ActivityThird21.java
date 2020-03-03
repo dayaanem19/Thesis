@@ -21,14 +21,14 @@ public class ActivityThird21 extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivityMainV2();
+                opensuccessfulSignUp();
             }
         });
 
     }
 
-    public void openActivityMainV2() {
-        Intent intent = new Intent(this, ActivityMainV2.class);
+    public void opensuccessfulSignUp() {
+        Intent intent = new Intent(this, successfulSignUp.class);
         startActivity(intent);
     }
 }

@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ActivitySixthV21 extends AppCompatActivity {
-    private Button submitButton;
+    private Button resetBtn;
     private TextView textView;
 
     @Override
@@ -19,11 +19,11 @@ public class ActivitySixthV21 extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_sixth_screenv21);
 
-        submitButton = findViewById(R.id.resetBtn);
-        submitButton.setOnClickListener(new View.OnClickListener() {
+        resetBtn = findViewById(R.id.resetBtn);
+        resetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivityFourthV2();
+                openresetPin();
             }
         });
 
@@ -37,13 +37,18 @@ public class ActivitySixthV21 extends AppCompatActivity {
 
     }
 
-    public void openActivityFourthV2() {
-        Intent intent = new Intent(this, ActivityFourthV2.class);
-        startActivity(intent);
-    }
+//    public void openActivityFourthV2() {
+//        Intent intent = new Intent(this, ActivityFourthV2.class);
+//        startActivity(intent);
+//    }
 
     public void openActivityMainV2() {
         Intent intent = new Intent(this, ActivityMainV2.class);
+        startActivity(intent);
+    }
+
+    public void openresetPin() {
+        Intent intent = new Intent(this, resetPin.class);
         startActivity(intent);
     }
 }
