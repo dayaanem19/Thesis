@@ -25,7 +25,7 @@ public class ActivitySixthV2 extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_sixth_screenv2);
 
-        textView = findViewById(R.id.textView16);
+        textView = findViewById(R.id.signinBtn);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

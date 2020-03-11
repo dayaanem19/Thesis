@@ -24,7 +24,7 @@ public class ActivitySeventh21 extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_seventh_screenv21);
 
-        signIn = findViewById(R.id.textView20);
+        signIn = findViewById(R.id.signinBtn);
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

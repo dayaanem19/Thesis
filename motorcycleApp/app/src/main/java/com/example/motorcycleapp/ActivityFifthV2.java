@@ -36,7 +36,7 @@ public class ActivityFifthV2 extends AppCompatActivity {
         setContentView(R.layout.activity_fifth_screenv2);
 
 
-        logoutBtn = findViewById(R.id.textView21);
+        logoutBtn = findViewById(R.id.logOutButton);
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +53,7 @@ public class ActivityFifthV2 extends AppCompatActivity {
         resetDesc=findViewById(R.id.resetDesc);
         autoDesc=findViewById(R.id.autoDesc);
 
-//        //showing the auto check mark
+//        //showing the auto check mark please uncomment when code is integrated
 //        ResetBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

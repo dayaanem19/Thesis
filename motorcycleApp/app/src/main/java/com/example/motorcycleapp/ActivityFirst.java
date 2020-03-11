@@ -23,7 +23,7 @@ public class ActivityFirst extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_first_screen);
 
-        button = findViewById(R.id.loginNowButton);
+        button = findViewById(R.id.letsGetStartedBtn);
         button.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {

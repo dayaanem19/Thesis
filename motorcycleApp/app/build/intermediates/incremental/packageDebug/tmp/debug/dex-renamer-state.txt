@@ -1,13 +1,7 @@
-#Mon Mar 09 23:11:16 PST 2020
-path.3=classes.dex
-path.2=classes.dex
+#Wed Mar 11 23:11:28 PST 2020
+base.0=/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
-path.0=classes.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
 renamed.1=classes2.dex
+path.0=classes.dex
 renamed.0=classes.dex
-base.3=/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
-base.2=/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
-base.1=/home/dayan/Desktop/BluetoothTap/Thesis-master (1)/Thesis-master/motorcycleApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
-base.0=/home/dayan/Desktop/BluetoothTap/Thesis-master (1)/Thesis-master/motorcycleApp/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+base.1=/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex

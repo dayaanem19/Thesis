@@ -34,13 +34,13 @@ public class ActivityMainV2 extends AppCompatActivity {
 
         backBtn = findViewById(R.id.backBtn);
         backBtn.setOnClickListener(new View.OnClickListener() {
-                                       @Override
-                                       public void onClick(View v) {
-                                           openActivityFirst();
-                                       }
-                                   });
+            @Override
+            public void onClick(View v) {
+                openActivityFirst();
+            }
+        });
 
-        forgotPassword = findViewById(R.id.textView2);
+        forgotPassword = findViewById(R.id.forgot);
         forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

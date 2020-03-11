@@ -25,7 +25,7 @@ public class ActivitySeventh2 extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_seventh_screenv2);
 
-        nextBtn = findViewById(R.id.button4);
+        nextBtn = findViewById(R.id.nextBtn);
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,7 +33,7 @@ public class ActivitySeventh2 extends AppCompatActivity {
             }
         });
 
-        textView = findViewById(R.id.textView16);
+        textView = findViewById(R.id.signinBtn);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

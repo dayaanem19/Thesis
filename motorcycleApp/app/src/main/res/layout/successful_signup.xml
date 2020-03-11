@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/SuccessImage"
-        android:layout_width="335dp"
-        android:layout_height="479dp"
-        android:layout_marginTop="39dp"
+        android:layout_width="333dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="@+id/signupDesc"
         app:layout_constraintStart_toStartOf="@+id/signupDesc"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,9 +25,10 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="monospace"
-        app:layout_constraintBottom_toTopOf="@+id/signupDesc"
         app:layout_constraintEnd_toEndOf="@+id/signupDesc"
-        app:layout_constraintStart_toStartOf="@+id/signupDesc" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/signupDesc"
+        app:layout_constraintTop_toBottomOf="@+id/SuccessImage" />
 
     <TextView
         android:id="@+id/signupDesc"
@@ -37,8 +38,9 @@
         android:textAlignment="center"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
-        app:layout_constraintTop_toBottomOf="@+id/SuccessImage" />
+        app:layout_constraintTop_toBottomOf="@+id/SuccessTitle" />
 
     <Button
         android:id="@+id/loginButton"
@@ -46,9 +48,8 @@
         android:layout_width="317dp"
         android:layout_height="65dp"
         android:layout_marginStart="46dp"
-        android:layout_marginTop="60dp"
         android:layout_marginEnd="48dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="10dp"
         android:background="#86D2E5"
         android:backgroundTint="#86D2E5"
         android:text="Get Login"
@@ -56,6 +57,5 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signupDesc" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

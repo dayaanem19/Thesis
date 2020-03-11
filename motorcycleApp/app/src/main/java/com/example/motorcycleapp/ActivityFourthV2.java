@@ -26,7 +26,7 @@ public class ActivityFourthV2 extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_fourth_screenv2);
 
-        enterBtn = findViewById(R.id.enterButton);
+        enterBtn = findViewById(R.id.submitBtn);
         enterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +34,7 @@ public class ActivityFourthV2 extends AppCompatActivity {
             }
         });
 
-        textView = findViewById(R.id.textView11);
+        textView = findViewById(R.id.forgotPinBtn);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
