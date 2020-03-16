@@ -37,7 +37,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="28dp"
-        android:text="@string/welcome_text"
+        android:text="Welcome to Camma"
         android:textAlignment="center"
         android:textColor="#0E0D0D"
         android:textSize="24sp"

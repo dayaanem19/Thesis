@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Certainty</string>
+    <string name="app_name">CAMMA</string>
     <string name="home_text_view_string">A keycode maintenance management app for motorcycle electronic security measures</string>
     <string name="welcome_text">Welcome to Certainty</string>
     <string name="password">Password</string>
