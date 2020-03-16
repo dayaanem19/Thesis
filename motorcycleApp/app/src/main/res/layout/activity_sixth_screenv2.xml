@@ -43,18 +43,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/recoveryCode"
+        android:id="@+id/textInputLayout8"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:passwordToggleEnabled="true"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recoveryCode"
             android:layout_width="317dp"
             android:layout_height="55dp"
             android:drawableStart="@drawable/ic_action_code"
@@ -69,24 +70,23 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
         android:text="Just Remembered?"
-        app:layout_constraintEnd_toEndOf="@+id/recoveryCode"
-        app:layout_constraintHorizontal_bias="0.425"
-        app:layout_constraintStart_toStartOf="@+id/recoveryCode"
-        app:layout_constraintTop_toBottomOf="@+id/recoveryCode" />
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout8"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
 
     <TextView
         android:id="@+id/signinBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:text="Sign in"
         android:textColor="#1B1515"
-        app:layout_constraintEnd_toEndOf="@+id/recoveryCode"
-        app:layout_constraintHorizontal_bias="0.745"
-        app:layout_constraintStart_toStartOf="@+id/recoveryCode"
-        app:layout_constraintTop_toBottomOf="@+id/recoveryCode" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8" />
 
     <Button
         android:id="@+id/button4"

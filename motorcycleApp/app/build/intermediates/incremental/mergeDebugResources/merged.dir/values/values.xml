@@ -813,6 +813,7 @@
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
@@ -862,6 +863,7 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="unknown_service">Unknown service</string>
     <string name="welcome_text">Welcome to Certainty</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

@@ -33,25 +33,23 @@
         android:id="@+id/imageView6"
         android:layout_width="297dp"
         android:layout_height="318dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="64dp"
         android:contentDescription="TODO"
-        app:layout_constraintEnd_toEndOf="@+id/submitBtn"
-        app:layout_constraintStart_toStartOf="@+id/submitBtn"
-        app:layout_constraintTop_toBottomOf="@+id/pinNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pin"
         app:srcCompat="@drawable/ic_unlock" />
 
     <EditText
-        android:id="@+id/pinNumber"
+        android:id="@+id/pin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="88dp"
         android:ems="10"
         android:hint="Pin Number"
-        android:inputType="textPassword"
+        android:inputType="numberPassword"
         android:maxLength="7"
-        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,9 +58,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot PIN?"
-        app:layout_constraintEnd_toEndOf="@+id/pinNumber"
+        app:layout_constraintEnd_toEndOf="@+id/pin"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/pinNumber"
-        app:layout_constraintTop_toBottomOf="@+id/pinNumber" />
+        app:layout_constraintStart_toStartOf="@+id/pin"
+        app:layout_constraintTop_toBottomOf="@+id/pin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

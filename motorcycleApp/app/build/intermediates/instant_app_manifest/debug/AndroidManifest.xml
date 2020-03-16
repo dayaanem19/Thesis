@@ -42,8 +42,6 @@
         </activity>
         <activity android:name="com.example.motorcycleapp.ActivitySeventh21" >
         </activity>
-        <activity android:name="com.example.motorcycleapp.ActivitySecondV2" >
-        </activity>
         <activity android:name="com.example.motorcycleapp.ActivitySecond21" >
         </activity>
         <activity android:name="com.example.motorcycleapp.ActivityFourthV2" >
@@ -60,6 +58,10 @@
         </activity>
         <activity android:name="com.example.motorcycleapp.successfulSignUp" >
         </activity>
+
+        <service
+            android:name="com.example.motorcycleapp.BluetoothLeService"
+            android:enabled="true" />
     </application>
 
 </manifest>

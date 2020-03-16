@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="Please fill your details below"
-        app:layout_constraintBottom_toTopOf="@+id/name"
+
         app:layout_constraintEnd_toEndOf="@+id/textView13"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/textView13"
@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/ic_undraw_security_o890" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/name"
+        android:id="@+id/textInputLayout3"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
         android:layout_height="wrap_content"
@@ -41,6 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
             android:layout_width="317dp"
             android:layout_height="55dp"
             android:drawableLeft="@drawable/ic_action_user"
@@ -52,26 +53,25 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/pinNumber"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="@+id/nextBtn"
         app:layout_constraintStart_toStartOf="@+id/nextBtn"
-        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
         tools:ignore="MissingConstraints">
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText"
+            android:id="@+id/pinNum"
             android:layout_width="317dp"
             android:layout_height="55dp"
             android:drawableStart="@drawable/ic_action_pin"
             android:drawablePadding="10dp"
             android:ems="5"
             android:hint="PIN Number"
-            android:inputType="textPassword"
+            android:inputType="numberPassword"
             android:paddingLeft="10dp" />
     </com.google.android.material.textfield.TextInputLayout>
 

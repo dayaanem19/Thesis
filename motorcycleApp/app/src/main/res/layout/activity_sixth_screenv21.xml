@@ -61,19 +61,20 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/newPass"
+        android:id="@+id/textInputLayout10"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="@+id/resetPic"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="@+id/resetPic"
         app:layout_constraintTop_toBottomOf="@+id/resetPic"
         tools:ignore="MissingConstraints">
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText"
+            android:id="@+id/pin"
             android:layout_width="317dp"
             android:layout_height="55dp"
             android:drawableStart="@drawable/ic_action_pin"
@@ -88,38 +89,37 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="16dp"
         android:text="Sign in"
         android:textColor="#1B1515"
-        app:layout_constraintEnd_toEndOf="@+id/confirmPass"
-        app:layout_constraintHorizontal_bias="0.694"
-        app:layout_constraintStart_toStartOf="@+id/confirmPass"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPass" />
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout11"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout11" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
         android:text="Just Remembered?"
-        app:layout_constraintEnd_toEndOf="@+id/confirmPass"
-        app:layout_constraintHorizontal_bias="0.353"
-        app:layout_constraintStart_toStartOf="@+id/confirmPass"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPass" />
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout11"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout11" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirmPass"
+        android:id="@+id/textInputLayout11"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/newPass"
-        app:layout_constraintStart_toStartOf="@+id/newPass"
-        app:layout_constraintTop_toBottomOf="@+id/newPass"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout10"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout10"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout10"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText2"
+            android:id="@+id/confirmPin"
             android:layout_width="317dp"
             android:layout_height="55dp"
             android:drawableStart="@drawable/ic_action_pin"

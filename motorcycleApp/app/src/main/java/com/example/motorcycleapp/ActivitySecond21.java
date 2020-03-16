@@ -32,7 +32,6 @@ public class ActivitySecond21 extends AppCompatActivity {
 
     private Button searchBtn;
     private Button nextBtn;
-    private ImageView backBtn;
     private Switch bluetoothSwitch;
     private BluetoothAdapter myBluetoothAdapter;
     private ListView myListView;
@@ -56,21 +55,6 @@ public class ActivitySecond21 extends AppCompatActivity {
         // On Screen load
         setContentView(R.layout.activity_second_screenv21);
 
-        nextBtn = findViewById(R.id.nextBtn);
-        nextBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivityThirdV2();
-            }
-        });
-
-        backBtn = findViewById(R.id.backBtn);
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivityMainV2();
-            }
-        });
 
         myListView = findViewById(R.id.myListView);
         pDeviceName = (TextView) findViewById(R.id.pDeviceName);
@@ -80,21 +64,24 @@ public class ActivitySecond21 extends AppCompatActivity {
         myListView.setAdapter(BTArrayAdapter);
 
         myBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        bluetoothSwitch = findViewById(R.id.bluetoothSwitch);
+
+        if (myBluetoothAdapter.isEnabled()) {
+            bluetoothSwitch.setChecked(true);
+        } else {
+            bluetoothSwitch.setChecked(false);
+        }
+
 
         if(myBluetoothAdapter == null) {
             nextBtn.setEnabled(false);
+            searchBtn.setEnabled(false);
             searchBtn.setEnabled(false);
 
             //pop up message
             Toast.makeText(getApplicationContext(),"Your device does not support Bluetooth",
                     Toast.LENGTH_LONG).show();
         } else {
-            bluetoothSwitch = findViewById(R.id.bluetoothSwitch);
-
-            if (myBluetoothAdapter.isEnabled()) {
-                bluetoothSwitch.setChecked(true);
-            }
-
             searchBtn = findViewById(R.id.searchBtn);
             searchBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -216,11 +203,12 @@ public class ActivitySecond21 extends AppCompatActivity {
     }
 
     public void openActivityMainV2() {
-       Intent intent = new Intent(this, ActivityMainV2.class);
+        Intent intent = new Intent(this, ActivityMainV2.class);
         startActivity(intent);
 
         // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
     }
+
 
     final BroadcastReceiver bReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
@@ -290,29 +278,45 @@ public class ActivitySecond21 extends AppCompatActivity {
 
         Log.v("SAMPLE", "PAIRED DeviceName : " + deviceName);
 
-        //create the bond.
-        //NOTE: Requires API 17+? I think this is JellyBean
-        if(Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR2){
-            Log.v("SAMPLE", "Trying to pair with " + deviceName);
-            Log.v("SAMPLE", "Bond state : " + mBTDevices.get(position).getBondState());
-            if (mBTDevices.get(position).getBondState() == 12) {
-                pDeviceName.setVisibility(View.VISIBLE);
-                pDeviceName.setText(deviceName);
+        //create the bond if and only if device found is IMB0001.
 
-                pDeviceName.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        confirmDialogDemo(deviceName);
-                    }
-                });
+        if (deviceName.equals("IMB0001")) {
+            //NOTE: Requires API 17+? I think this is JellyBean
+            if(Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR2){
+                Log.v("SAMPLE", "Trying to pair with " + deviceName);
+                Log.v("SAMPLE", "Bond state : " + mBTDevices.get(position).getBondState());
+                if (mBTDevices.get(position).getBondState() == 12) {
+                    pDeviceName.setVisibility(View.VISIBLE);
+                    pDeviceName.setText(deviceName);
 
-                Toast.makeText(getApplicationContext(),"Device is already PAIRED with : " + deviceName,
-                        Toast.LENGTH_LONG).show();
-            } else {
-                mBTDevices.get(position).createBond();
+                    pDeviceName.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            confirmDialogDemo(deviceName);
+                        }
+                    });
+
+                    nextBtn = findViewById(R.id.nextBtn);
+                    nextBtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            openActivityThirdV2();
+                        }
+                    });
+
+                    Toast.makeText(getApplicationContext(),"Device is already PAIRED with : " + deviceName,
+                            Toast.LENGTH_LONG).show();
+                } else {
+                    mBTDevices.get(position).createBond();
+                }
             }
+        } else {
+            // If user selects a device to pair with that is not IMB0001.
 
+            Toast.makeText(getApplicationContext(),"Device cannot be paired!",
+                    Toast.LENGTH_LONG).show();
         }
+
     }
 
     private void unpairDevice(BluetoothDevice device) {
@@ -372,47 +376,60 @@ public class ActivitySecond21 extends AppCompatActivity {
 
             if(action.equals(BluetoothDevice.ACTION_BOND_STATE_CHANGED)){
                 BluetoothDevice mDevice = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                //3 cases:
-                //case1: bonded already
-                if (mDevice.getBondState() == BluetoothDevice.BOND_BONDED){
-                    Log.v("TAG", "BroadcastReceiver: BOND_BONDED.");
+                final String deviceName = mDevice.getName();
 
-                    Toast.makeText(getApplicationContext(),"Your device has successfully paired!",
-                            Toast.LENGTH_LONG).show();
+                if (deviceName.equals("IMB0001")) {
 
-                    pDeviceName.setVisibility(View.VISIBLE);
-                    final String deviceName = mDevice.getName();
-                    pDeviceName.setText(deviceName);
+                    // Case 1: bonded already
+                    if (mDevice.getBondState() == BluetoothDevice.BOND_BONDED){
+                        Log.v("TAG", "BroadcastReceiver: BOND_BONDED.");
 
-                    pDeviceName.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            confirmDialogDemo(deviceName);
-                        }
-                    });
-                }
-                //case2: creating a bone
-                if (mDevice.getBondState() == BluetoothDevice.BOND_BONDING) {
-                    Log.v("TAG", "BroadcastReceiver: BOND_BONDING.");
-
-                    Toast.makeText(getApplicationContext(),"Your device is pairing...",
-                            Toast.LENGTH_LONG).show();
-                }
-                //case3: breaking a bond
-                if (mDevice.getBondState() == BluetoothDevice.BOND_NONE) {
-                    Log.v("TAG", "BroadcastReceiver: BOND_NONE.");
-
-                    pDeviceName.setVisibility(View.INVISIBLE);
-                    final String deviceName = mDevice.getName();
-
-                    if (isUnpairing) {
-                        Toast.makeText(getApplicationContext(),"Your device has successfully unpaired from: " + deviceName,
+                        Toast.makeText(getApplicationContext(),"Your device has successfully paired!",
                                 Toast.LENGTH_LONG).show();
-                    } else {
-                        Toast.makeText(getApplicationContext(),"Your device has not paired.",
+
+                        pDeviceName.setVisibility(View.VISIBLE);
+                        pDeviceName.setText(deviceName);
+
+                        nextBtn = findViewById(R.id.nextBtn);
+                        nextBtn.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                openActivityThirdV2();
+                            }
+                        });
+
+                        pDeviceName.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                confirmDialogDemo(deviceName);
+                            }
+                        });
+                    }
+
+                    // Case 2: creating a bond
+                    if (mDevice.getBondState() == BluetoothDevice.BOND_BONDING) {
+                        Log.v("TAG", "BroadcastReceiver: BOND_BONDING.");
+
+                        Toast.makeText(getApplicationContext(),"Your device is pairing...",
                                 Toast.LENGTH_LONG).show();
                     }
+
+                    // Case 3: breaking a bond
+                    if (mDevice.getBondState() == BluetoothDevice.BOND_NONE) {
+                        Log.v("TAG", "BroadcastReceiver: BOND_NONE.");
+
+                        pDeviceName.setVisibility(View.INVISIBLE);
+
+                        if (isUnpairing) {
+                            Toast.makeText(getApplicationContext(),"Your device has successfully unpaired from: " + deviceName,
+                                    Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(getApplicationContext(),"Your device has not paired.",
+                                    Toast.LENGTH_LONG).show();
+                        }
+                    }
                 }
+
             }
         }
     };
@@ -448,3 +465,4 @@ public class ActivitySecond21 extends AppCompatActivity {
         unregisterReceiver(mBroadcastReceiver4);
     }
 }
+

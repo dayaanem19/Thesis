@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-56:12
+ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-55:12
 MERGED from [com.airbnb.android:lottie:3.3.1] /home/dayan/.gradle/caches/transforms-2/files-2.1/5a0f26d26b3749d03d9899eb4791af47/lottie-3.3.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.2.0-alpha04] /home/dayan/.gradle/caches/transforms-2/files-2.1/8e4164242d330790f65e8f79ba433c7a/material-1.2.0-alpha04/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/dayan/.gradle/caches/transforms-2/files-2.1/f5bdf8930f5b0dade80802408310dda6/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -33,22 +33,22 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dayan/.gradle/ca
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/dayan/.gradle/caches/transforms-2/files-2.1/c073c929da6ad4e112abaac7d3212747/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/dayan/.gradle/caches/transforms-2/files-2.1/e72949b043b8df7a6068dab5e7cd21f2/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/dayan/.gradle/caches/transforms-2/files-2.1/c1c197127a3bb2986ca04166291d4a56/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-55:12
 	package
 		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:4:5-40
 		INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
 		INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
-		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-56:12
+		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-55:12
 		INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
 	xmlns:dist
 		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:3:5-61
 	android:versionCode
 		INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
-		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-56:12
+		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:1-55:12
 		INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:2:11-69
@@ -65,7 +65,7 @@ ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/A
 	android:name
 		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:9:22-71
 application
-ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:11:5-54:19
+ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:11:5-53:19
 MERGED from [com.airbnb.android:lottie:3.3.1] /home/dayan/.gradle/caches/transforms-2/files-2.1/5a0f26d26b3749d03d9899eb4791af47/lottie-3.3.1/AndroidManifest.xml:9:5-20
 MERGED from [com.airbnb.android:lottie:3.3.1] /home/dayan/.gradle/caches/transforms-2/files-2.1/5a0f26d26b3749d03d9899eb4791af47/lottie-3.3.1/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.2.0-alpha04] /home/dayan/.gradle/caches/transforms-2/files-2.1/8e4164242d330790f65e8f79ba433c7a/material-1.2.0-alpha04/AndroidManifest.xml:22:5-20
@@ -124,42 +124,44 @@ activity#com.example.motorcycleapp.ActivitySeventh21
 ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:33:9-34:20
 	android:name
 		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:33:19-52
-activity#com.example.motorcycleapp.ActivitySecondV2
+activity#com.example.motorcycleapp.ActivitySecond21
 ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:35:9-36:20
 	android:name
 		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:35:19-51
-activity#com.example.motorcycleapp.ActivitySecond21
+activity#com.example.motorcycleapp.ActivityFourthV2
 ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:37:9-38:20
 	android:name
 		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:37:19-51
-activity#com.example.motorcycleapp.ActivityFourthV2
+activity#com.example.motorcycleapp.ActivityFifthV2
 ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:39:9-40:20
 	android:name
-		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:39:19-51
-activity#com.example.motorcycleapp.ActivityFifthV2
+		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:39:19-50
+activity#com.example.motorcycleapp.ActivitySixthV2
 ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:41:9-42:20
 	android:name
 		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:41:19-50
-activity#com.example.motorcycleapp.ActivitySixthV2
+activity#com.example.motorcycleapp.ActivitySixthV21
 ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:43:9-44:20
 	android:name
-		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:43:19-50
-activity#com.example.motorcycleapp.ActivitySixthV21
+		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:43:19-51
+activity#com.example.motorcycleapp.resetPass
 ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:45:9-46:20
 	android:name
-		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:45:19-51
-activity#com.example.motorcycleapp.resetPass
+		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:45:19-44
+activity#com.example.motorcycleapp.resetPin
 ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:47:9-48:20
 	android:name
-		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:47:19-44
-activity#com.example.motorcycleapp.resetPin
+		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:47:19-43
+activity#com.example.motorcycleapp.successfulSignUp
 ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:49:9-50:20
 	android:name
-		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:49:19-43
-activity#com.example.motorcycleapp.successfulSignUp
-ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:51:9-52:20
+		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:49:19-51
+service#com.example.motorcycleapp.BluetoothLeService
+ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:51:9-77
+	android:enabled
+		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:51:53-75
 	android:name
-		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:51:19-51
+		ADDED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:51:18-52
 uses-sdk
 INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml

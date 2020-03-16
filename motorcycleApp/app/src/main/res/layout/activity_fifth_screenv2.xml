@@ -19,7 +19,6 @@
         app:layout_constraintHorizontal_bias="0.789"
         app:layout_constraintStart_toStartOf="@+id/changeKeyBtn"
         app:layout_constraintTop_toBottomOf="@+id/immoName"
-        app:lottie_autoPlay="true"
         app:lottie_fileName="automatic_check.json"
         app:lottie_loop="false" />
 
@@ -29,10 +28,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="148dp"
-        android:text="Immobilizer's Name"
+        android:text="IMB0001"
         app:layout_constraintBottom_toTopOf="@+id/animation_view"
         app:layout_constraintEnd_toStartOf="@+id/logOutButton"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toEndOf="@+id/bluetoothLogo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -50,26 +49,12 @@
         app:srcCompat="@drawable/ic_bluetooth_connected_24px" />
 
     <TextView
-        android:id="@+id/resetDesc"
+        android:id="@+id/Desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="You have reset\n a keycode successfully."
         android:textAlignment="center"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="@+id/animation_view"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="@+id/animation_view"
-        app:layout_constraintTop_toBottomOf="@+id/animation_view" />
-
-    <TextView
-        android:id="@+id/manualDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="You have manually change a\n keycode successfully."
-        android:textAlignment="center"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/animation_view"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/animation_view"
@@ -124,18 +109,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/autoDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="You have automatically changed\n a keycode successfully."
-        android:textAlignment="center"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="@+id/animation_view"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toStartOf="@+id/animation_view"
-        app:layout_constraintTop_toBottomOf="@+id/animation_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

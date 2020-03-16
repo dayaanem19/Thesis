@@ -32,8 +32,6 @@
         </activity>
         <activity android:name=".ActivitySeventh21">
         </activity>
-        <activity android:name=".ActivitySecondV2">
-        </activity>
         <activity android:name=".ActivitySecond21">
         </activity>
         <activity android:name=".ActivityFourthV2">
@@ -50,6 +48,7 @@
         </activity>
         <activity android:name=".successfulSignUp">
         </activity>
+        <service android:name=".BluetoothLeService" android:enabled="true"/>
 
     </application>
 

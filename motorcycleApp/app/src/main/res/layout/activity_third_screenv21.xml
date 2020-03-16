@@ -28,19 +28,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirmPass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="@+id/createAccount"
         app:layout_constraintStart_toStartOf="@+id/createAccount"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
         app:passwordToggleEnabled="true"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText2"
+            android:id="@+id/confirmPin"
             android:layout_width="317dp"
             android:layout_height="55dp"
             android:layout_marginTop="40dp"
@@ -53,13 +52,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password"
+        android:id="@+id/textInputLayout4"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="317dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:passwordToggleEnabled="true"
@@ -67,7 +65,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText"
+            android:id="@+id/pin"
             android:layout_width="317dp"
             android:layout_height="55dp"
             android:layout_marginTop="36dp"
