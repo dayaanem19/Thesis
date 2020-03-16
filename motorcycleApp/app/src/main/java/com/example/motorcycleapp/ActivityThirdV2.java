@@ -24,6 +24,11 @@ public class ActivityThirdV2 extends AppCompatActivity {
 
 
     @Override
+    public void onBackPressed(){
+        finish();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third_screenv2);

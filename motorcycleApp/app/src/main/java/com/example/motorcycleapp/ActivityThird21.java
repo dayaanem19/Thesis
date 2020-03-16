@@ -21,6 +21,12 @@ public class ActivityThird21 extends AppCompatActivity {
     private EditText confirmPassword;
 
     @Override
+    public void onBackPressed(){
+        finish();
+    }
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third_screenv21);

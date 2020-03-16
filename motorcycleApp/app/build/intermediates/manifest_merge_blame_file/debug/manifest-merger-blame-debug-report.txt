@@ -23,7 +23,7 @@
 15-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:9:22-71
 16
 17    <application
-17-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:11:5-53:19
+17-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:11:5-61:19
 18        android:allowBackup="true"
 18-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:12:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -49,9 +49,9 @@
 29-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:20:17-69
 29-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:20:25-66
 30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:22:17-77
-31-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:22:27-74
+31                <category android:name="android.intent.category.DEFAULT" />
+31-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:22:17-76
+31-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:22:27-73
 32            </intent-filter>
 33        </activity>
 34        <activity android:name="com.example.motorcycleapp.ActivityMainV2" >
@@ -113,6 +113,21 @@
 62-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:51:18-52
 63            android:enabled="true" />
 63-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:51:53-75
-64    </application>
-65
-66</manifest>
+64
+65        <activity android:name="com.example.motorcycleapp.activity_splashScreen" >
+65-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:52:9-59:20
+65-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:52:19-56
+66            <intent-filter>
+66-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:53:13-57:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:20:17-69
+67-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:20:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:56:17-77
+69-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml:56:27-74
+70            </intent-filter>
+71        </activity>
+72    </application>
+73
+74</manifest>

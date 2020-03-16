@@ -64,6 +64,11 @@ public class ActivityFifthV2 extends AppCompatActivity {
     private BluetoothGattCharacteristic characteristicRX;
 
     @Override
+    public void onBackPressed(){
+        finish();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fifth_screenv2);

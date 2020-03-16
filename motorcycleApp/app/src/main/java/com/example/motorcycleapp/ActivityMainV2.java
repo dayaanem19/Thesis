@@ -226,6 +226,11 @@ public class ActivityMainV2 extends AppCompatActivity {
     };
 
     @Override
+    public void onBackPressed(){
+        openActivityFirst();
+    }
+
+    @Override
     protected void onRestart() {
         super.onRestart();
 
@@ -257,5 +262,12 @@ public class ActivityMainV2 extends AppCompatActivity {
     public void openActivityMainV2() {
         Intent intent = new Intent(this, ActivityMainV2.class);
         startActivity(intent);
+    }
+
+    public void openActivityFirst() {
+        Intent intent = new Intent(this, ActivityFirst.class);
+        startActivity(intent);
+
+        // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
     }
 }

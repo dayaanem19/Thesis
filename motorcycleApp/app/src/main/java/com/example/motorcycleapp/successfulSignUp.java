@@ -17,6 +17,12 @@ public class successfulSignUp extends AppCompatActivity {
     private Button loginButton;
 
     @Override
+    public void onBackPressed(){
+        finish();
+    }
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.successful_signup);

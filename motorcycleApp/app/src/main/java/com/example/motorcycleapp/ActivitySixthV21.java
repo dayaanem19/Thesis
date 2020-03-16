@@ -26,6 +26,12 @@ public class ActivitySixthV21 extends AppCompatActivity {
     volatile boolean isResume = true;
     private BluetoothAdapter mBluetoothAdapter;
     private int flag=0;
+
+    @Override
+    public void onBackPressed(){
+        finish();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

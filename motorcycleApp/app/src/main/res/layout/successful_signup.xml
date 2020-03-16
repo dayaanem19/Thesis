@@ -52,7 +52,7 @@
         android:layout_marginBottom="10dp"
         android:background="#86D2E5"
         android:backgroundTint="#86D2E5"
-        android:text="Get Login"
+        android:text="Login"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -46,6 +46,7 @@ public class ActivitySecond21 extends AppCompatActivity {
     //to disable the functionality of back button in android phones
     @Override
     public void onBackPressed(){
+        openActivityMainV2();
     }
 
     @Override
@@ -208,6 +209,8 @@ public class ActivitySecond21 extends AppCompatActivity {
 
         // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
     }
+
+
 
 
     final BroadcastReceiver bReceiver = new BroadcastReceiver() {
@@ -455,6 +458,7 @@ public class ActivitySecond21 extends AppCompatActivity {
         builder.show();
     }
 
+
     @Override
     protected void onDestroy() {
         // TODO Auto-generated method stub
@@ -464,5 +468,6 @@ public class ActivitySecond21 extends AppCompatActivity {
         unregisterReceiver(mBroadcastReceiver3);
         unregisterReceiver(mBroadcastReceiver4);
     }
+
 }
 
