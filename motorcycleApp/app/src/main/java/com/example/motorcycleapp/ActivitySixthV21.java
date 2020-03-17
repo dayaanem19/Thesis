@@ -29,7 +29,7 @@ public class ActivitySixthV21 extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        finish();
+        finishAffinity();
     }
 
     @Override

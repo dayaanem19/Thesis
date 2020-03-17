@@ -18,7 +18,7 @@ public class successfulSignUp extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        finish();
+        finishAffinity();
     }
 
 

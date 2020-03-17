@@ -25,7 +25,7 @@ public class ActivityThirdV2 extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        finish();
+        finishAffinity();
     }
 
     @Override

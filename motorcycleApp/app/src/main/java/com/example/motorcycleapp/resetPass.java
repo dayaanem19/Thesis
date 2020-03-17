@@ -23,7 +23,7 @@ public class resetPass extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        finish();
+        finishAffinity();
     }
 
     @Override

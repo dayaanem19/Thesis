@@ -21,7 +21,7 @@ public class resetPin extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        finish();
+        finishAffinity();
     }
 
     @Override

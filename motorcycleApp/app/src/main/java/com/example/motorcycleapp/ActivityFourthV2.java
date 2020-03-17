@@ -31,7 +31,7 @@ public class ActivityFourthV2 extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        finish();
+        finishAffinity();
     }
 
 
