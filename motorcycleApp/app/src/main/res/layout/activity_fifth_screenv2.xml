@@ -54,6 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textAlignment="center"
+        android:textColor="#FF2E2929"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/animation_view"
         app:layout_constraintHorizontal_bias="0.495"

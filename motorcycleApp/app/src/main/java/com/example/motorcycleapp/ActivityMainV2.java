@@ -23,7 +23,6 @@ public class ActivityMainV2 extends AppCompatActivity {
     private Button signUpBtn;
     private TextView forgotPassword;
     private Button loginButton;
-    private ImageView backBtn;
     private EditText Name;
     private EditText Password;
     private int counter=5;

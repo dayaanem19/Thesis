@@ -14,6 +14,7 @@ public class ActivityFirst extends AppCompatActivity {
     //to disable the functionality of back button in android phones
     @Override
     public void onBackPressed(){
+
     }
 
     @Override

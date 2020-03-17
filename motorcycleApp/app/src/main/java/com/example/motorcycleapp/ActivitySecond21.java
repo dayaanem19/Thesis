@@ -42,11 +42,12 @@ public class ActivitySecond21 extends AppCompatActivity {
     public ArrayList<BluetoothDevice> mBTDevices = new ArrayList<>();
     public int itemPosition;
     public boolean isUnpairing = false;
+    public boolean isSwitchedOn = false;
 
     //to disable the functionality of back button in android phones
     @Override
     public void onBackPressed(){
-        openActivityMainV2();
+        finishAffinity();
     }
 
     @Override
@@ -55,7 +56,6 @@ public class ActivitySecond21 extends AppCompatActivity {
 
         // On Screen load
         setContentView(R.layout.activity_second_screenv21);
-
 
         myListView = findViewById(R.id.myListView);
         pDeviceName = (TextView) findViewById(R.id.pDeviceName);
@@ -101,6 +101,7 @@ public class ActivitySecond21 extends AppCompatActivity {
                 searchBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        Log.d("SAMPLE", "Inside bluetoothSwitch.isChecked()");
                         searchDevices(v);
                     }
                 });
@@ -143,9 +144,10 @@ public class ActivitySecond21 extends AppCompatActivity {
             bluetoothSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     Log.d("SAMPLE", "ON CLICK SWITCH!");
-
+                    Log.d("SAMPLE", "CHECK isChecked value : " + isChecked);
                     // If switch is turned on
                     if (isChecked) {
+                        isSwitchedOn = true;
                         Log.d("SAMPLE", "Setting Switch to on!");
                         on(buttonView);
 
@@ -154,7 +156,13 @@ public class ActivitySecond21 extends AppCompatActivity {
                         searchBtn.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                searchDevices(v);
+                                if (isSwitchedOn) {
+                                    Log.v("SAMPLE", "Inside onCheckedChanged");
+                                    searchDevices(v);
+                                } else {
+                                    Toast.makeText(getApplicationContext(),"Bluetooth is currently turned off",
+                                            Toast.LENGTH_LONG).show();
+                                }
                             }
                         });
 
@@ -186,6 +194,7 @@ public class ActivitySecond21 extends AppCompatActivity {
                         });
 
                     } else {
+                        isSwitchedOn = false;
                         Log.d("SAMPLE", "Setting Switch to off!");
                         off(buttonView);
                     }
@@ -202,15 +211,6 @@ public class ActivitySecond21 extends AppCompatActivity {
 
         // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
     }
-
-    public void openActivityMainV2() {
-        Intent intent = new Intent(this, ActivityMainV2.class);
-        startActivity(intent);
-
-        // NOTE: To success fully connect to screen, declare class name in AndroidManifest.xml
-    }
-
-
 
 
     final BroadcastReceiver bReceiver = new BroadcastReceiver() {
@@ -265,6 +265,11 @@ public class ActivitySecond21 extends AppCompatActivity {
 
     public void off(View view){
         myBluetoothAdapter.disable();
+        bluetoothSwitch.setChecked(false);
+
+        mBTDevices = new ArrayList<>();
+        myBluetoothAdapter.cancelDiscovery();
+        BTArrayAdapter.clear();
 
         IntentFilter BTIntent = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
         registerReceiver(mBroadcastReceiver1, BTIntent);
