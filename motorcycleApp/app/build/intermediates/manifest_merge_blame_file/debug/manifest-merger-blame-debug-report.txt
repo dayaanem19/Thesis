@@ -6,7 +6,7 @@
 6    android:versionName="1.0" >
 7
 8    <uses-sdk
-9        android:minSdkVersion="23"
+9        android:minSdkVersion="19"
 9-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml
 10        android:targetSdkVersion="29" />
 10-->/home/dayan/Documents/FinalThesis/Thesis/motorcycleApp/app/src/main/AndroidManifest.xml

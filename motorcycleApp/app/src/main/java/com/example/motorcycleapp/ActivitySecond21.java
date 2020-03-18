@@ -46,9 +46,7 @@ public class ActivitySecond21 extends AppCompatActivity {
 
     //to disable the functionality of back button in android phones
     @Override
-    public void onBackPressed(){
-        finishAffinity();
-    }
+    public void onBackPressed(){ }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +57,9 @@ public class ActivitySecond21 extends AppCompatActivity {
 
         myListView = findViewById(R.id.myListView);
         pDeviceName = (TextView) findViewById(R.id.pDeviceName);
+        nextBtn = findViewById(R.id.nextBtn);
+
+        nextBtn.setEnabled(false);
 
         // create the arrayAdapter that contains the BTDevices, and set it to the ListView
         BTArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
@@ -270,6 +271,7 @@ public class ActivitySecond21 extends AppCompatActivity {
         mBTDevices = new ArrayList<>();
         myBluetoothAdapter.cancelDiscovery();
         BTArrayAdapter.clear();
+        nextBtn.setEnabled(false);
 
         IntentFilter BTIntent = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
         registerReceiver(mBroadcastReceiver1, BTIntent);
@@ -289,6 +291,7 @@ public class ActivitySecond21 extends AppCompatActivity {
         //create the bond if and only if device found is IMB0001.
 
         if (deviceName.equals("IMB0001")) {
+            nextBtn.setEnabled(true);
             //NOTE: Requires API 17+? I think this is JellyBean
             if(Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR2){
                 Log.v("SAMPLE", "Trying to pair with " + deviceName);

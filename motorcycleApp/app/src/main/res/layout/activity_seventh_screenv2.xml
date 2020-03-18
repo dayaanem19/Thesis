@@ -37,6 +37,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please fill your details below"
+        android:textColor="#746971"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
         app:layout_constraintEnd_toEndOf="@+id/forgotPassword"
         app:layout_constraintStart_toStartOf="@+id/forgotPassword"
         app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
@@ -47,10 +50,13 @@
         android:layout_width="317dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:textColorHint="#746971"
+        app:boxStrokeColor="#86D2E5"
         app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#746971"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -89,6 +95,9 @@
         android:layout_marginStart="68dp"
         android:layout_marginTop="7dp"
         android:text="Just Remembered?"
+        android:textColor="#746971"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
 
@@ -99,6 +108,8 @@
         android:layout_marginStart="3dp"
         android:layout_marginTop="7dp"
         android:text="Sign in"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
         android:textColor="#1B1515"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

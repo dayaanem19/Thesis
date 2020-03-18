@@ -31,7 +31,9 @@
         android:layout_height="46dp"
         android:layout_marginTop="20dp"
         android:text="Enter your username and password to get access to your account."
+        android:textColor="#746971"
         android:textSize="15sp"
+        android:fontFamily="sans-serif"
         app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView8"
@@ -74,6 +76,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Forgot Password?"
+        android:textColor="#746971"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.844"
@@ -87,10 +92,13 @@
         android:layout_width="317dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:textColorHint="#746971"
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
         app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#746971"
+        app:boxStrokeColor="#86D2E5"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -154,6 +162,8 @@
         android:layout_width="317dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:textColorHint="#746971"
+        app:boxStrokeColor="#86D2E5"
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
         app:layout_constraintTop_toBottomOf="@+id/textView9">
@@ -161,7 +171,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userName"
             android:layout_width="317dp"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_action_user"
             android:drawablePadding="10dp"
             android:ems="5"

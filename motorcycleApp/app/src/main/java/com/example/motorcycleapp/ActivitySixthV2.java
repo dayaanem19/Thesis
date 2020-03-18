@@ -28,12 +28,6 @@ public class ActivitySixthV2 extends AppCompatActivity {
     private BluetoothAdapter mBluetoothAdapter;
 
     @Override
-    public void onBackPressed(){
-        finishAffinity();
-    }
-
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sixth_screenv2);
@@ -174,5 +168,8 @@ public class ActivitySixthV2 extends AppCompatActivity {
         Intent intent = new Intent(this, ActivitySixthV21.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed(){ }
 
 }

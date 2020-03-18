@@ -30,12 +30,6 @@ public class ActivityFourthV2 extends AppCompatActivity {
     private BluetoothAdapter mBluetoothAdapter;
 
     @Override
-    public void onBackPressed(){
-        finishAffinity();
-    }
-
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourth_screenv2);
@@ -198,5 +192,8 @@ public class ActivityFourthV2 extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityMainV2.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed(){ }
 
 }

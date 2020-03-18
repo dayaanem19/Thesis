@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.motorcycleapp"
-        minSdkVersion 23 //23 changed to 19 bec. of kristia's phone
+        minSdkVersion 19 //23 changed to 19 bec. of kristia's phone
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"

@@ -20,11 +20,6 @@ public class resetPin extends AppCompatActivity {
     private int flag=0;
 
     @Override
-    public void onBackPressed(){
-        finishAffinity();
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.successful_reset_pin);
@@ -102,4 +97,7 @@ public class resetPin extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityFourthV2.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed(){ }
 }

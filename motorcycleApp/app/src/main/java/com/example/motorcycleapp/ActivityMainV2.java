@@ -1,6 +1,8 @@
 package com.example.motorcycleapp;
 
 import android.annotation.SuppressLint;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -18,6 +20,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.solver.widgets.WidgetContainer;
 
+import java.lang.reflect.Method;
+import java.util.Set;
+
 public class ActivityMainV2 extends AppCompatActivity {
 
     private Button signUpBtn;
@@ -27,6 +32,7 @@ public class ActivityMainV2 extends AppCompatActivity {
     private EditText Password;
     private int counter=5;
     private boolean isCounter=true;
+    private BluetoothAdapter mBluetoothAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,9 +120,25 @@ public class ActivityMainV2 extends AppCompatActivity {
 
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            SharedPreferences.Editor editor = database.edit();
-                            editor.clear();
-                            editor.apply();
+
+                            mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+                            Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
+
+                            for (BluetoothDevice bt : pairedDevices) {
+                                if (bt.getName().contains("IMB0001")) {
+                                    try {
+                                        Method method = bt.getClass().getMethod("removeBond", (Class[]) null);
+                                        method.invoke(bt, (Object[]) null);
+
+                                        SharedPreferences.Editor editor = database.edit();
+                                        editor.clear();
+                                        editor.apply();
+
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            }
                             loginButton.setEnabled(false);
                             openActivitySecond21();
                         }
@@ -226,7 +248,7 @@ public class ActivityMainV2 extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        openActivityFirst();
+
     }
 
     @Override

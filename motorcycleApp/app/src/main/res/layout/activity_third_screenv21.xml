@@ -22,6 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please fill your details below"
+        android:textColor="#746971"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
         app:layout_constraintEnd_toEndOf="@+id/textView13"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/textView13"
@@ -32,10 +35,13 @@
         android:layout_width="317dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        app:boxStrokeColor="#86D2E5"
+        android:textColorHint="#746971"
         app:layout_constraintEnd_toEndOf="@+id/createAccount"
         app:layout_constraintStart_toStartOf="@+id/createAccount"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
         app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#746971"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -57,10 +63,13 @@
         android:layout_width="317dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:textColorHint="#746971"
+        app:boxStrokeColor="#86D2E5"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#746971"
         tools:ignore="MissingConstraints">
 
 

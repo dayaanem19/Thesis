@@ -21,12 +21,6 @@ public class ActivityThird21 extends AppCompatActivity {
     private EditText confirmPassword;
 
     @Override
-    public void onBackPressed(){
-        finishAffinity();
-    }
-
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third_screenv21);
@@ -91,8 +85,7 @@ public class ActivityThird21 extends AppCompatActivity {
                         }
                     });
                     builder.show();
-                    password.setText("");
-                    confirmPassword.setText("");
+
                 }
             }
         });
@@ -121,4 +114,6 @@ public class ActivityThird21 extends AppCompatActivity {
         Intent intent = new Intent(this, successfulSignUp.class);
         startActivity(intent);
     }
+
+
 }

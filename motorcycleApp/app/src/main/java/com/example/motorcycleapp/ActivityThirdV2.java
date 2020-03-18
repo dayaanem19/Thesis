@@ -22,12 +22,6 @@ public class ActivityThirdV2 extends AppCompatActivity {
     private EditText userName;
     private EditText pinNumber;
 
-
-    @Override
-    public void onBackPressed(){
-        finishAffinity();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,8 +62,6 @@ public class ActivityThirdV2 extends AppCompatActivity {
                     editor.putString("pinNum",pinNumValue);
                     editor.apply();
 
-                    userName.setText(" ");
-                    pinNumber.setText("");
                     openActivityThird21();
 
                 }
@@ -93,16 +85,11 @@ public class ActivityThirdV2 extends AppCompatActivity {
         public void afterTextChanged(Editable s) { }
     };
 
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        userName.setText("");
-        pinNumber.setText("");
-    }
-
     public void openActivityThird21() {
         Intent intent = new Intent(this, ActivityThird21.class);
         startActivity(intent);
     }
 
+    @Override
+    public void onBackPressed(){ }
 }

@@ -38,7 +38,8 @@ public class ActivityFifthV2 extends AppCompatActivity {
 
     private LottieAnimationView animation_view;
     private Button changeKeyBtn;
-    private TextView description;
+    private TextView manualDesc;
+    private TextView resetDesc;
     private Button ResetBtn;
     private TextView logoutBtn;
 
@@ -63,10 +64,7 @@ public class ActivityFifthV2 extends AppCompatActivity {
     private BluetoothGattCharacteristic characteristicTX;
     private BluetoothGattCharacteristic characteristicRX;
 
-    @Override
-    public void onBackPressed(){
-        finishAffinity();
-    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +73,8 @@ public class ActivityFifthV2 extends AppCompatActivity {
 
         logoutBtn = findViewById(R.id.logOutButton);
         changeKeyBtn=findViewById(R.id.changeKeyBtn);
-        description=findViewById(R.id.Desc);
+        manualDesc=findViewById(R.id.manualDesc);
+        resetDesc=findViewById(R.id.resetDesc);
         ResetBtn=findViewById(R.id.ResetBtn);
         animation_view=findViewById(R.id.animation_view);
 
@@ -83,8 +82,10 @@ public class ActivityFifthV2 extends AppCompatActivity {
 
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
-        description.setEnabled(false);
+
+
         database = getSharedPreferences("UserInfo", MODE_PRIVATE);
+
         // Use this check to determine whether BLE is supported on the device.  Then you can
         // selectively disable BLE-related features.
         if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
@@ -134,11 +135,36 @@ public class ActivityFifthV2 extends AppCompatActivity {
                 if (mConnected) {
                     characteristicTX.setValue(tx);
                     mBluetoothLeService.writeCharacteristic(characteristicTX);
-                    animation_view.setAnimation("manual_check.json");
-                    animation_view.playAnimation();
-                    description.setVisibility(View.VISIBLE);
-                    description.setText("You have manually changed a keycode");
                 }
+
+                animation_view.setAnimation("manual_check.json");
+                animation_view.playAnimation();
+                animation_view.addAnimatorListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animation) {
+                        resetDesc.setVisibility(View.INVISIBLE);
+                        manualDesc.setVisibility(View.INVISIBLE);
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        manualDesc.setVisibility(View.VISIBLE);
+                        if (manualDesc.getVisibility() == View.VISIBLE) {
+                            resetDesc.setVisibility(View.INVISIBLE);
+                        }
+                        else {
+                            resetDesc.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animation) {
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animation) {
+                    }
+                });
 
                 changeKeyBtn.setEnabled(false);
                 ResetBtn.setEnabled(false);
@@ -156,7 +182,7 @@ public class ActivityFifthV2 extends AppCompatActivity {
                             }
                         });
                     }
-                }, 60000);
+                }, 1);
 
             }
         });
@@ -172,12 +198,53 @@ public class ActivityFifthV2 extends AppCompatActivity {
                 if (mConnected) {
                     characteristicTX.setValue(tx);
                     mBluetoothLeService.writeCharacteristic(characteristicTX);
-                    animation_view.setAnimation("reset_check.json");
-                    animation_view.playAnimation();
-                    description.setEnabled(true);
-                    description.setVisibility(View.VISIBLE);
-                    description.setText("You have manually reset a keycode");
                 }
+
+                animation_view.setAnimation("reset_check.json");
+                animation_view.playAnimation();
+                animation_view.addAnimatorListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animation) {
+                        manualDesc.setVisibility(View.INVISIBLE);
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        resetDesc.setVisibility(View.VISIBLE);
+                        if (resetDesc.getVisibility() == View.VISIBLE) {
+                            manualDesc.setVisibility(View.INVISIBLE);
+                        }
+                        else {
+                            manualDesc.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animation) {
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animation) {
+                    }
+                });
+
+                changeKeyBtn.setEnabled(false);
+                ResetBtn.setEnabled(false);
+                Timer buttonTimer = new Timer();
+                buttonTimer.schedule(new TimerTask() {
+
+                    @Override
+                    public void run() {
+                        runOnUiThread(new Runnable() {
+
+                            @Override
+                            public void run() {
+                                changeKeyBtn.setEnabled(true);
+                                ResetBtn.setEnabled(true);
+                            }
+                        });
+                    }
+                }, 1);
 
             }
         });
@@ -509,5 +576,8 @@ public class ActivityFifthV2 extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityFourthV2.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed(){ }
 
 }

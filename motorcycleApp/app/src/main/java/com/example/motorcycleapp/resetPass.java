@@ -22,11 +22,6 @@ public class resetPass extends AppCompatActivity {
     private int flag = 0;
 
     @Override
-    public void onBackPressed(){
-        finishAffinity();
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.successful_reset_pass);
@@ -96,4 +91,7 @@ public class resetPass extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityMainV2.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed(){ }
 }

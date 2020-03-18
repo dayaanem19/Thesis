@@ -67,7 +67,9 @@
         android:layout_marginTop="12dp"
         android:gravity="center"
         android:text="@string/home_text_view_string"
+        android:textColor="#746971"
         android:textSize="15sp"
+        app:fontFamily="sans-serif"
         app:layout_constraintEnd_toEndOf="@+id/letsGetStartedBtn"
         app:layout_constraintStart_toStartOf="@+id/letsGetStartedBtn"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />

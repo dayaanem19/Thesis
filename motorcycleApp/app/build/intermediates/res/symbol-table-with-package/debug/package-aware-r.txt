@@ -1660,6 +1660,7 @@ id load
 id logOutButton
 id loginButton
 id lottie_layer_name
+id manualDesc
 id masked
 id message
 id messageAttempt
@@ -1723,6 +1724,7 @@ id progress_horizontal
 id radio
 id recoveryCode
 id resetBtn
+id resetDesc
 id resetPassDesc
 id resetPic
 id resetpinDesc

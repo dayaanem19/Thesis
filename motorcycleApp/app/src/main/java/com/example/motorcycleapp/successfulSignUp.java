@@ -17,12 +17,6 @@ public class successfulSignUp extends AppCompatActivity {
     private Button loginButton;
 
     @Override
-    public void onBackPressed(){
-        finishAffinity();
-    }
-
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.successful_signup);
@@ -41,4 +35,7 @@ public class successfulSignUp extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityMainV2.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed(){ }
 }

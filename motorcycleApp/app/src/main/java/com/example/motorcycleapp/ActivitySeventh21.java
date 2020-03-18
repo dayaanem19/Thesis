@@ -28,11 +28,6 @@ public class ActivitySeventh21 extends AppCompatActivity {
     private int flag=0;
 
     @Override
-    public void onBackPressed(){
-        finishAffinity();
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seventh_screenv21);
@@ -155,7 +150,6 @@ public class ActivitySeventh21 extends AppCompatActivity {
         isResume=true;
     }
 
-
     public void openActivityMainV2() {
         isResume = false;
         Intent intent = new Intent(this, ActivityMainV2.class);
@@ -167,4 +161,7 @@ public class ActivitySeventh21 extends AppCompatActivity {
         Intent intent = new Intent(this, resetPass.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed(){ }
 }
